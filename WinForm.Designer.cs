@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.DownloadBtn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SongImg = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.ProgressBarDownload = new System.Windows.Forms.ProgressBar();
             ((System.ComponentModel.ISupportInitialize)(this.SongImg)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,17 +43,18 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(124, 99);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "&Random Beatmap";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // DownloadBtn
             // 
-            this.button2.Location = new System.Drawing.Point(649, 163);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(124, 99);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.DownloadBtn.Location = new System.Drawing.Point(649, 163);
+            this.DownloadBtn.Name = "DownloadBtn";
+            this.DownloadBtn.Size = new System.Drawing.Size(124, 99);
+            this.DownloadBtn.TabIndex = 1;
+            this.DownloadBtn.Text = "&Download";
+            this.DownloadBtn.UseVisualStyleBackColor = true;
+            this.DownloadBtn.Click += new System.EventHandler(this.DownloadBtn_Click);
             // 
             // label1
             // 
@@ -79,15 +81,23 @@
             this.panel1.Size = new System.Drawing.Size(124, 99);
             this.panel1.TabIndex = 4;
             // 
+            // ProgressBarDownload
+            // 
+            this.ProgressBarDownload.Location = new System.Drawing.Point(12, 415);
+            this.ProgressBarDownload.Name = "ProgressBarDownload";
+            this.ProgressBarDownload.Size = new System.Drawing.Size(761, 23);
+            this.ProgressBarDownload.TabIndex = 5;
+            // 
             // WinForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ProgressBarDownload);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.SongImg);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.DownloadBtn);
             this.Controls.Add(this.button1);
             this.Name = "WinForm";
             this.Text = "Osu! Desktop Downloader";
@@ -101,9 +111,10 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button DownloadBtn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox SongImg;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ProgressBar ProgressBarDownload;
     }
 }
