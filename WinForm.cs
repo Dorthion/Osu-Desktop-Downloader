@@ -26,7 +26,7 @@ namespace OsuDesktop
 
         private void GetApiCode()
         {
-            using (StreamReader sr = new StreamReader("..\\..\\ApiCode.txt"))
+            using (StreamReader sr = new StreamReader("..\\..\\ApiCode.ddd"))
             {
                 ApiCode = sr.ReadLine();
                 Console.WriteLine(ApiCode);

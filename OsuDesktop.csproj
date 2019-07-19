@@ -77,7 +77,7 @@
     <None Include="Resources\NoImage.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="ApiCode.txt" />
+    <None Include="ApiCode.ddd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
