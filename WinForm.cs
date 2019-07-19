@@ -17,7 +17,7 @@ namespace OsuDesktop
         protected int RandomNumber { get; set; }
         protected string JsonText { get; set; }
 
-        private string ApiCode ="84d49e6ceda0678a4278553bdd89eba1a9fbe8ec";
+        private string ApiCode ="";
         public WinForm()
         {
             InitializeComponent();
