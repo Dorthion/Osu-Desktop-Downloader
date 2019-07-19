@@ -10,3 +10,4 @@ D:\Programowanie\OsuDesktop\OsuDesktop\bin\Debug\Newtonsoft.Json.xml
 D:\Programowanie\OsuDesktop\OsuDesktop\obj\Debug\OsuDesktop.csproj.CopyComplete
 D:\Programowanie\OsuDesktop\OsuDesktop\obj\Debug\OsuDesktop.exe
 D:\Programowanie\OsuDesktop\OsuDesktop\obj\Debug\OsuDesktop.pdb
+D:\Programowanie\OsuDesktop\OsuDesktop\obj\Debug\OsuDesktop.Properties.Resources.resources

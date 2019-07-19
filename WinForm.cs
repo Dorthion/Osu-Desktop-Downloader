@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -13,19 +14,18 @@ namespace OsuDesktop
 {
     public partial class WinForm : Form
     {
+        protected int RandomNumber { get; set; }
         public WinForm()
         {
             InitializeComponent();
         }
 
-        private void WinForm_Load(object sender, EventArgs e)
+        private int Rng()
         {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
+            int Number;
+            Random rng = new Random();
+            Number = rng.Next(1, 100000);
+            return Number;
         }
 
         private void DownloadBtn_Click(object sender, EventArgs e)
@@ -33,21 +33,49 @@ namespace OsuDesktop
             string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
             using (WebClient wc = new WebClient())
             {
-                wc.DownloadProgressChanged += wc_DownloadProgressChanged;
-                wc.DownloadFileAsync(
-                    // Param1 = Link of file
-                    new Uri("http://osu.ppy.sh/d/923703"),
-                    // Param2 = Path to save
-                   // "D:\\Images\\front_view.osz"
+                //wc.DownloadProgressChanged += wc_DownloadProgressChanged;
+                /*wc.DownloadFile(
+                    //new Uri("http://osu.ppy.sh/d/923703"),
+                    new Uri("https://osu.ppy.sh/s/923703"),
 
                     "C:\\Users\\Dorthion\\Desktop\\oof.osz"
-                );
+                );*/
+                //Actually Do Nothing
             }
         }
 
-        void wc_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
+        private bool CheckBeatmap()
         {
-            ProgressBarDownload.Value = e.ProgressPercentage;
+            return true;
+        }
+
+        private void RandomButton_Click(object sender, EventArgs e)
+        {
+            SongImg.Image = null;
+            RandomNumber = Rng();
+            //if()
+            ChangeImg();
+            RngNumText.Text = "Wylosowana liczba: " + RandomNumber;
+        }
+
+        private void ChangeImg()
+        {
+            string TempPath = Path.GetTempPath() + "OsuDesktopTmp\\";
+
+            bool exists = Directory.Exists(TempPath);
+
+            if (!exists)
+                Directory.CreateDirectory(TempPath);
+
+            string result = Path.GetTempPath() + "OsuDesktopTmp\\" + RandomNumber + ".jpg";
+            string BeatmapImg = "https://assets.ppy.sh/beatmaps/" + RandomNumber + "/covers/cover.jpg";
+
+            using (WebClient wc = new WebClient())
+            {
+                wc.DownloadFile(new Uri(BeatmapImg), result);
+            }
+
+            SongImg.Image = Bitmap.FromFile(result);
         }
     }
 }
