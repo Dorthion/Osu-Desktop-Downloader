@@ -15,6 +15,9 @@ namespace OsuDesktop
     public partial class WinForm : Form
     {
         protected int RandomNumber { get; set; }
+        protected string JsonText { get; set; }
+
+        private string ApiCode ="84d49e6ceda0678a4278553bdd89eba1a9fbe8ec";
         public WinForm()
         {
             InitializeComponent();
@@ -53,9 +56,24 @@ namespace OsuDesktop
         {
             SongImg.Image = null;
             RandomNumber = Rng();
-            //if()
+            DownloadJson();
             ChangeImg();
             RngNumText.Text = "Wylosowana liczba: " + RandomNumber;
+        }
+
+        private void DownloadJson()
+        {
+            using (WebClient wc = new WebClient())
+            {
+                JsonText = wc.DownloadString("https://osu.ppy.sh/api/get_beatmaps?k="+ApiCode +"&s="+RandomNumber.ToString());
+                Console.WriteLine(JsonText);
+            }
+        }
+
+        private bool JsonExists()
+        {
+
+            return true;
         }
 
         private void ChangeImg()
@@ -72,10 +90,18 @@ namespace OsuDesktop
 
             using (WebClient wc = new WebClient())
             {
-                wc.DownloadFile(new Uri(BeatmapImg), result);
+                try{
+                    wc.DownloadFile(new Uri(BeatmapImg), result);
+                }
+                catch(WebException)
+                {
+                    SongImg.Image = SongImg.ErrorImage;
+                }
+                finally{
+                    if(SongImg.Image!=SongImg.ErrorImage)
+                        SongImg.Image = Bitmap.FromFile(result);
+                }
             }
-
-            SongImg.Image = Bitmap.FromFile(result);
         }
     }
 }

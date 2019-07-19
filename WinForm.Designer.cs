@@ -29,51 +29,17 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WinForm));
-            this.RandomButtom = new System.Windows.Forms.Button();
-            this.DownloadBtn = new System.Windows.Forms.Button();
-            this.SongImg = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.BeatmapText = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.RngNumText = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.SongImg)).BeginInit();
+            this.SongImg = new System.Windows.Forms.PictureBox();
+            this.DownloadBtn = new System.Windows.Forms.Button();
+            this.RandomButtom = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SongImg)).BeginInit();
             this.SuspendLayout();
-            // 
-            // RandomButtom
-            // 
-            this.RandomButtom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(84)))));
-            this.RandomButtom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RandomButtom.BackgroundImage")));
-            this.RandomButtom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.RandomButtom.Location = new System.Drawing.Point(738, 12);
-            this.RandomButtom.Name = "RandomButtom";
-            this.RandomButtom.Size = new System.Drawing.Size(100, 100);
-            this.RandomButtom.TabIndex = 0;
-            this.RandomButtom.UseVisualStyleBackColor = false;
-            this.RandomButtom.Click += new System.EventHandler(this.RandomButton_Click);
-            // 
-            // DownloadBtn
-            // 
-            this.DownloadBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(84)))));
-            this.DownloadBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DownloadBtn.BackgroundImage")));
-            this.DownloadBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.DownloadBtn.Location = new System.Drawing.Point(738, 117);
-            this.DownloadBtn.Name = "DownloadBtn";
-            this.DownloadBtn.Size = new System.Drawing.Size(100, 100);
-            this.DownloadBtn.TabIndex = 1;
-            this.DownloadBtn.UseVisualStyleBackColor = false;
-            this.DownloadBtn.Click += new System.EventHandler(this.DownloadBtn_Click);
-            // 
-            // SongImg
-            // 
-            this.SongImg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(30)))), ((int)(((byte)(80)))));
-            this.SongImg.Location = new System.Drawing.Point(12, 12);
-            this.SongImg.Name = "SongImg";
-            this.SongImg.Size = new System.Drawing.Size(720, 200);
-            this.SongImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.SongImg.TabIndex = 3;
-            this.SongImg.TabStop = false;
             // 
             // panel1
             // 
@@ -119,6 +85,42 @@
             this.RngNumText.TabIndex = 0;
             this.RngNumText.Text = "Rng";
             // 
+            // SongImg
+            // 
+            this.SongImg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(30)))), ((int)(((byte)(80)))));
+            this.SongImg.BackgroundImage = global::OsuDesktop.Properties.Resources.triangles_combined;
+            this.SongImg.ErrorImage = global::OsuDesktop.Properties.Resources.NoImage;
+            this.SongImg.Location = new System.Drawing.Point(12, 12);
+            this.SongImg.Name = "SongImg";
+            this.SongImg.Size = new System.Drawing.Size(720, 200);
+            this.SongImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.SongImg.TabIndex = 3;
+            this.SongImg.TabStop = false;
+            // 
+            // DownloadBtn
+            // 
+            this.DownloadBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(84)))));
+            this.DownloadBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DownloadBtn.BackgroundImage")));
+            this.DownloadBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.DownloadBtn.Location = new System.Drawing.Point(738, 117);
+            this.DownloadBtn.Name = "DownloadBtn";
+            this.DownloadBtn.Size = new System.Drawing.Size(100, 100);
+            this.DownloadBtn.TabIndex = 1;
+            this.DownloadBtn.UseVisualStyleBackColor = false;
+            this.DownloadBtn.Click += new System.EventHandler(this.DownloadBtn_Click);
+            // 
+            // RandomButtom
+            // 
+            this.RandomButtom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(84)))));
+            this.RandomButtom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RandomButtom.BackgroundImage")));
+            this.RandomButtom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.RandomButtom.Location = new System.Drawing.Point(738, 12);
+            this.RandomButtom.Name = "RandomButtom";
+            this.RandomButtom.Size = new System.Drawing.Size(100, 100);
+            this.RandomButtom.TabIndex = 0;
+            this.RandomButtom.UseVisualStyleBackColor = false;
+            this.RandomButtom.Click += new System.EventHandler(this.RandomButton_Click);
+            // 
             // WinForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -134,9 +136,9 @@
             this.Controls.Add(this.RandomButtom);
             this.Name = "WinForm";
             this.Text = "Osu! Desktop Randomizer";
-            ((System.ComponentModel.ISupportInitialize)(this.SongImg)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.SongImg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
