@@ -17,10 +17,20 @@ namespace OsuDesktop
         protected int RandomNumber { get; set; }
         protected string JsonText { get; set; }
 
-        private string ApiCode ="84d49e6ceda0678a4278553bdd89eba1a9fbe8ec";
+        protected string ApiCode;
         public WinForm()
         {
             InitializeComponent();
+            GetApiCode();
+        }
+
+        private void GetApiCode()
+        {
+            using (StreamReader sr = new StreamReader("..\\..\\ApiCode.txt"))
+            {
+                ApiCode = sr.ReadLine();
+                Console.WriteLine(ApiCode);
+            }
         }
 
         private int Rng()
@@ -47,11 +57,6 @@ namespace OsuDesktop
             }
         }
 
-        private bool CheckBeatmap()
-        {
-            return true;
-        }
-
         private void RandomButton_Click(object sender, EventArgs e)
         {
             SongImg.Image = null;
@@ -72,7 +77,6 @@ namespace OsuDesktop
 
         private bool JsonExists()
         {
-
             return true;
         }
 
