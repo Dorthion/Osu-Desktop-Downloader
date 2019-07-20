@@ -30,25 +30,38 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WinForm));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.RngNumText = new System.Windows.Forms.Label();
             this.BeatmapText = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.SongNameText = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.RngNumText = new System.Windows.Forms.Label();
             this.SongImg = new System.Windows.Forms.PictureBox();
             this.DownloadBtn = new System.Windows.Forms.Button();
             this.RandomButtom = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SongImg)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(30)))), ((int)(((byte)(80)))));
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(84)))));
             this.panel1.Controls.Add(this.RngNumText);
             this.panel1.Location = new System.Drawing.Point(738, 222);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(100, 100);
             this.panel1.TabIndex = 4;
+            // 
+            // RngNumText
+            // 
+            this.RngNumText.AutoSize = true;
+            this.RngNumText.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.RngNumText.Location = new System.Drawing.Point(0, 26);
+            this.RngNumText.MinimumSize = new System.Drawing.Size(100, 40);
+            this.RngNumText.Name = "RngNumText";
+            this.RngNumText.Size = new System.Drawing.Size(100, 40);
+            this.RngNumText.TabIndex = 0;
+            this.RngNumText.Text = "Rng";
             // 
             // BeatmapText
             // 
@@ -63,27 +76,32 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(84)))));
+            this.panel2.Controls.Add(this.SongNameText);
             this.panel2.Location = new System.Drawing.Point(12, 222);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(720, 268);
             this.panel2.TabIndex = 6;
             // 
+            // SongNameText
+            // 
+            this.SongNameText.AutoSize = true;
+            this.SongNameText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.SongNameText.Location = new System.Drawing.Point(252, 12);
+            this.SongNameText.Name = "SongNameText";
+            this.SongNameText.Size = new System.Drawing.Size(223, 32);
+            this.SongNameText.TabIndex = 0;
+            this.SongNameText.Text = "Beatmap Name";
+            this.SongNameText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(84)))));
+            this.panel3.BackgroundImage = global::OsuDesktop.Properties.Resources.ikona3;
+            this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.panel3.Location = new System.Drawing.Point(738, 328);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(100, 100);
             this.panel3.TabIndex = 7;
-            // 
-            // RngNumText
-            // 
-            this.RngNumText.AutoSize = true;
-            this.RngNumText.Font = new System.Drawing.Font("Verdana", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.RngNumText.Location = new System.Drawing.Point(18, 35);
-            this.RngNumText.Name = "RngNumText";
-            this.RngNumText.Size = new System.Drawing.Size(60, 29);
-            this.RngNumText.TabIndex = 0;
-            this.RngNumText.Text = "Rng";
             // 
             // SongImg
             // 
@@ -99,7 +117,7 @@
             // 
             // DownloadBtn
             // 
-            this.DownloadBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(84)))));
+            this.DownloadBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(30)))), ((int)(((byte)(80)))));
             this.DownloadBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DownloadBtn.BackgroundImage")));
             this.DownloadBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DownloadBtn.Location = new System.Drawing.Point(738, 117);
@@ -111,7 +129,7 @@
             // 
             // RandomButtom
             // 
-            this.RandomButtom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(84)))));
+            this.RandomButtom.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(99)))), ((int)(((byte)(30)))), ((int)(((byte)(80)))));
             this.RandomButtom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RandomButtom.BackgroundImage")));
             this.RandomButtom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.RandomButtom.Location = new System.Drawing.Point(738, 12);
@@ -138,6 +156,8 @@
             this.Text = "Osu! Desktop Randomizer";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SongImg)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -154,5 +174,6 @@
         private System.Windows.Forms.Label RngNumText;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label SongNameText;
     }
 }

@@ -65,6 +65,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="WinForm.resx">
       <DependentUpon>WinForm.cs</DependentUpon>
@@ -78,6 +79,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ApiCode.ddd" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikona3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikona1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ikona2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

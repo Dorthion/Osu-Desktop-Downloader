@@ -1,0 +1,12 @@
+D:\Programowanie\OsuDesktop\OsuDesktop\bin\Release\OsuDesktop.exe.config
+D:\Programowanie\OsuDesktop\OsuDesktop\bin\Release\OsuDesktop.exe
+D:\Programowanie\OsuDesktop\OsuDesktop\bin\Release\OsuDesktop.pdb
+D:\Programowanie\OsuDesktop\OsuDesktop\bin\Release\Newtonsoft.Json.dll
+D:\Programowanie\OsuDesktop\OsuDesktop\bin\Release\Newtonsoft.Json.xml
+D:\Programowanie\OsuDesktop\OsuDesktop\obj\Release\OsuDesktop.Properties.Resources.resources
+D:\Programowanie\OsuDesktop\OsuDesktop\obj\Release\OsuDesktop.WinForm.resources
+D:\Programowanie\OsuDesktop\OsuDesktop\obj\Release\OsuDesktop.csproj.GenerateResource.cache
+D:\Programowanie\OsuDesktop\OsuDesktop\obj\Release\OsuDesktop.csproj.CoreCompileInputs.cache
+D:\Programowanie\OsuDesktop\OsuDesktop\obj\Release\OsuDesktop.csproj.CopyComplete
+D:\Programowanie\OsuDesktop\OsuDesktop\obj\Release\OsuDesktop.exe
+D:\Programowanie\OsuDesktop\OsuDesktop\obj\Release\OsuDesktop.pdb

@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.IO;
 using System.Linq;
@@ -29,7 +31,6 @@ namespace OsuDesktop
             using (StreamReader sr = new StreamReader("..\\..\\ApiCode.ddd"))
             {
                 ApiCode = sr.ReadLine();
-                Console.WriteLine(ApiCode);
             }
         }
 
@@ -43,18 +44,7 @@ namespace OsuDesktop
 
         private void DownloadBtn_Click(object sender, EventArgs e)
         {
-            string userName = System.Security.Principal.WindowsIdentity.GetCurrent().Name;
-            using (WebClient wc = new WebClient())
-            {
-                //wc.DownloadProgressChanged += wc_DownloadProgressChanged;
-                /*wc.DownloadFile(
-                    //new Uri("http://osu.ppy.sh/d/923703"),
-                    new Uri("https://osu.ppy.sh/s/923703"),
-
-                    "C:\\Users\\Dorthion\\Desktop\\oof.osz"
-                );*/
-                //Actually Do Nothing
-            }
+            Process.Start("osu://dl/" + RandomNumber);
         }
 
         private void RandomButton_Click(object sender, EventArgs e)
@@ -63,21 +53,27 @@ namespace OsuDesktop
             RandomNumber = Rng();
             DownloadJson();
             ChangeImg();
-            RngNumText.Text = "Wylosowana liczba: " + RandomNumber;
+            RngNumText.Text = RandomNumber.ToString();
         }
 
         private void DownloadJson()
         {
+            //Beatmap BeatmapOsu;
             using (WebClient wc = new WebClient())
             {
                 JsonText = wc.DownloadString("https://osu.ppy.sh/api/get_beatmaps?k="+ApiCode +"&s="+RandomNumber.ToString());
-                Console.WriteLine(JsonText);
-            }
-        }
 
-        private bool JsonExists()
-        {
-            return true;
+                JsonText = JsonText.Trim('[');
+                JsonText = JsonText.Trim(']');
+
+                Console.WriteLine(JsonText);
+
+                //BeatmapOsu = JsonConvert.DeserializeObject<Beatmap>(JsonText);
+
+                //if (JsonText!="")
+                //    SongNameText.Text = BeatmapOsu.beatmap_id;
+                
+            }
         }
 
         private void ChangeImg()
