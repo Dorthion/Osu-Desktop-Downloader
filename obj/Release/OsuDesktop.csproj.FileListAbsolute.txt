@@ -10,3 +10,4 @@ D:\Programowanie\OsuDesktop\OsuDesktop\obj\Release\OsuDesktop.csproj.CoreCompile
 D:\Programowanie\OsuDesktop\OsuDesktop\obj\Release\OsuDesktop.csproj.CopyComplete
 D:\Programowanie\OsuDesktop\OsuDesktop\obj\Release\OsuDesktop.exe
 D:\Programowanie\OsuDesktop\OsuDesktop\obj\Release\OsuDesktop.pdb
+D:\Programowanie\OsuDesktop\OsuDesktop\obj\Release\OsuDesktop.csprojAssemblyReference.cache

@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,7 +18,7 @@ namespace OsuDesktop
     public partial class WinForm : Form
     {
         protected int RandomNumber { get; set; }
-        protected string JsonText { get; set; }
+        private List<Beatmap> JsonText { get; set; }
 
         protected string ApiCode;
         public WinForm()
@@ -33,7 +34,7 @@ namespace OsuDesktop
                 ApiCode = sr.ReadLine();
             }
         }
-
+        
         private int Rng()
         {
             int Number;
@@ -58,21 +59,17 @@ namespace OsuDesktop
 
         private void DownloadJson()
         {
-            //Beatmap BeatmapOsu;
+            string FullJsonText;
             using (WebClient wc = new WebClient())
             {
-                JsonText = wc.DownloadString("https://osu.ppy.sh/api/get_beatmaps?k="+ApiCode +"&s="+RandomNumber.ToString());
+                FullJsonText = wc.DownloadString("https://osu.ppy.sh/api/get_beatmaps?k="+ApiCode +"&s="+RandomNumber.ToString());
 
-                JsonText = JsonText.Trim('[');
-                JsonText = JsonText.Trim(']');
-
-                Console.WriteLine(JsonText);
-
-                //BeatmapOsu = JsonConvert.DeserializeObject<Beatmap>(JsonText);
-
-                //if (JsonText!="")
-                //    SongNameText.Text = BeatmapOsu.beatmap_id;
-                
+                if (FullJsonText != "[]")
+                {
+                    FullJsonText = FullJsonText.Replace("null","\"null\"");
+                    JsonText = JsonConvert.DeserializeObject<List<Beatmap>>(FullJsonText);
+                    Console.WriteLine(JsonText.ElementAt(0).title);
+                }
             }
         }
 
