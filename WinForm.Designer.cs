@@ -72,6 +72,7 @@
             this.BeatmapText.Size = new System.Drawing.Size(54, 34);
             this.BeatmapText.TabIndex = 5;
             this.BeatmapText.Text = "  ODR\r\nVer 1.0";
+            this.BeatmapText.Click += new System.EventHandler(this.BeatmapText_Click);
             // 
             // panel2
             // 
@@ -86,7 +87,7 @@
             // 
             this.SongNameText.AutoSize = true;
             this.SongNameText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.SongNameText.Location = new System.Drawing.Point(252, 12);
+            this.SongNameText.Location = new System.Drawing.Point(3, 9);
             this.SongNameText.Name = "SongNameText";
             this.SongNameText.Size = new System.Drawing.Size(223, 32);
             this.SongNameText.TabIndex = 0;

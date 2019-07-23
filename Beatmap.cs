@@ -7,7 +7,7 @@ class Beatmap
     public string total_length { get; set; }
     public string hit_length { get; set; }
     public string version { get; set; }
-    public string file_md5 { get; set; }
+    public string file_md5 { get; set; }   //??
     public string diff_size { get; set; }
     public string diff_overall { get; set; }
     public string diff_approach { get; set; }
@@ -24,7 +24,7 @@ class Beatmap
     public string creator { get; set; }
     public string creator_id { get; set; }
     public string bpm { get; set; }
-    public string source { get; set; }    //??
+    public string source { get; set; } 
     public string tags { get; set; }
     public string genre_id { get; set; }
     public string language_id { get; set; }

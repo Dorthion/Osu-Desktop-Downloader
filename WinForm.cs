@@ -66,7 +66,7 @@ namespace OsuDesktop
 
                 if (FullJsonText != "[]")
                 {
-                    FullJsonText = FullJsonText.Replace("null","\"null\"");
+                    //FullJsonText = FullJsonText.Replace("null","\"null\"");
                     JsonText = JsonConvert.DeserializeObject<List<Beatmap>>(FullJsonText);
                     Console.WriteLine(JsonText.ElementAt(0).title);
                 }
@@ -99,6 +99,12 @@ namespace OsuDesktop
                         SongImg.Image = Bitmap.FromFile(result);
                 }
             }
+        }
+
+        private void BeatmapText_Click(object sender, EventArgs e)
+        {
+            WinSettings Settings = new WinSettings();
+            Settings.Show();
         }
     }
 }
