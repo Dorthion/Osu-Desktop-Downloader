@@ -10,21 +10,28 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+using System.Threading;
+using System.Globalization;
 using System.Windows.Forms;
+using System.Resources;
+using System.Reflection;
 
 namespace OsuDesktop
 {
     public partial class WinForm : Form
     {
         protected int RandomNumber { get; set; }
+        protected string ApiCode;
+
         private List<Beatmap> JsonText { get; set; }
 
-        protected string ApiCode;
+        internal static string cul = Properties.Settings.Default.Language;
+        internal ResourceManager rm = new ResourceManager("OsuDesktop.Resources." + cul, Assembly.GetExecutingAssembly());
+
         public WinForm()
         {
-            InitializeComponent();
             GetApiCode();
+            InitializeComponent();
         }
 
         private void GetApiCode()
@@ -41,6 +48,16 @@ namespace OsuDesktop
             Random rng = new Random();
             Number = rng.Next(1, 100000);
             return Number;
+        }
+
+        private void LoadLanguage()
+        {
+            switch (Properties.Settings.Default.Language)
+            {
+                case "English":
+                   // rm = Resources.en;
+                    break;
+            }
         }
 
         private void DownloadBtn_Click(object sender, EventArgs e)
@@ -66,9 +83,9 @@ namespace OsuDesktop
 
                 if (FullJsonText != "[]")
                 {
-                    //FullJsonText = FullJsonText.Replace("null","\"null\"");
                     JsonText = JsonConvert.DeserializeObject<List<Beatmap>>(FullJsonText);
                     Console.WriteLine(JsonText.ElementAt(0).title);
+                    SongNameText.Text = rm.GetString("BeatmapName") + " " + JsonText.ElementAt(0).title;
                 }
             }
         }

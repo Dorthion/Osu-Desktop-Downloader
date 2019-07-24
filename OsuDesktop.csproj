@@ -61,6 +61,16 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
+    <Compile Include="Resources\English.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>English.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Polski.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Polski.resx</DependentUpon>
+    </Compile>
     <Compile Include="WinSettings.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -92,6 +102,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\English.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>English.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Polski.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Polski.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinForm.en.resx">
+      <DependentUpon>WinForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="WinSettings.resx">
       <DependentUpon>WinSettings.cs</DependentUpon>
     </EmbeddedResource>

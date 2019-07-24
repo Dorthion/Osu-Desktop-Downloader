@@ -25,7 +25,7 @@ namespace OsuDesktop
             CheckGrave.Checked = Properties.Settings.Default.Graveyard;
             CheckPen.Checked = Properties.Settings.Default.Pending;
         }
-
+        
         private void SaveSettings()
         {
             Properties.Settings.Default.Style = RadioBtnClassic.Checked;
