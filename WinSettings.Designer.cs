@@ -35,17 +35,17 @@
             this.RadioBtnModern = new System.Windows.Forms.RadioButton();
             this.SaveBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
+            this.CheckRanked = new System.Windows.Forms.CheckBox();
+            this.CheckLove = new System.Windows.Forms.CheckBox();
+            this.CheckQual = new System.Windows.Forms.CheckBox();
+            this.CheckPen = new System.Windows.Forms.CheckBox();
+            this.CheckGrave = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(89, 62);
+            this.label1.Location = new System.Drawing.Point(120, 62);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(72, 17);
             this.label1.TabIndex = 0;
@@ -59,13 +59,13 @@
             "Polski"});
             this.LanguageList.Location = new System.Drawing.Point(12, 82);
             this.LanguageList.Name = "LanguageList";
-            this.LanguageList.Size = new System.Drawing.Size(240, 24);
+            this.LanguageList.Size = new System.Drawing.Size(300, 24);
             this.LanguageList.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(105, 9);
+            this.label2.Location = new System.Drawing.Point(136, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(39, 17);
             this.label2.TabIndex = 2;
@@ -80,22 +80,20 @@
             this.RadioBtnClassic.TabIndex = 3;
             this.RadioBtnClassic.Text = "Classic Style";
             this.RadioBtnClassic.UseVisualStyleBackColor = true;
-            this.RadioBtnClassic.CheckedChanged += new System.EventHandler(this.RadioBtnClassic_CheckedChanged);
             // 
             // RadioBtnModern
             // 
             this.RadioBtnModern.AutoSize = true;
-            this.RadioBtnModern.Location = new System.Drawing.Point(140, 29);
+            this.RadioBtnModern.Location = new System.Drawing.Point(200, 29);
             this.RadioBtnModern.Name = "RadioBtnModern";
             this.RadioBtnModern.Size = new System.Drawing.Size(112, 21);
             this.RadioBtnModern.TabIndex = 4;
             this.RadioBtnModern.Text = "Modern Style";
             this.RadioBtnModern.UseVisualStyleBackColor = true;
-            this.RadioBtnModern.CheckedChanged += new System.EventHandler(this.RadioBtnModern_CheckedChanged);
             // 
             // SaveBtn
             // 
-            this.SaveBtn.Location = new System.Drawing.Point(77, 297);
+            this.SaveBtn.Location = new System.Drawing.Point(108, 228);
             this.SaveBtn.Name = "SaveBtn";
             this.SaveBtn.Size = new System.Drawing.Size(105, 44);
             this.SaveBtn.TabIndex = 5;
@@ -106,72 +104,72 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(74, 122);
+            this.label3.Location = new System.Drawing.Point(105, 122);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(107, 17);
             this.label3.TabIndex = 6;
             this.label3.Text = "Beatmap Types";
             // 
-            // checkBox1
+            // CheckRanked
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(13, 142);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(79, 21);
-            this.checkBox1.TabIndex = 7;
-            this.checkBox1.Text = "Ranked";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.CheckRanked.AutoSize = true;
+            this.CheckRanked.Location = new System.Drawing.Point(13, 142);
+            this.CheckRanked.Name = "CheckRanked";
+            this.CheckRanked.Size = new System.Drawing.Size(79, 21);
+            this.CheckRanked.TabIndex = 7;
+            this.CheckRanked.Text = "Ranked";
+            this.CheckRanked.UseVisualStyleBackColor = true;
             // 
-            // checkBox2
+            // CheckLove
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(13, 169);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(98, 21);
-            this.checkBox2.TabIndex = 8;
-            this.checkBox2.Text = "Love State";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.CheckLove.AutoSize = true;
+            this.CheckLove.Location = new System.Drawing.Point(13, 169);
+            this.CheckLove.Name = "CheckLove";
+            this.CheckLove.Size = new System.Drawing.Size(98, 21);
+            this.CheckLove.TabIndex = 8;
+            this.CheckLove.Text = "Love State";
+            this.CheckLove.UseVisualStyleBackColor = true;
             // 
-            // checkBox3
+            // CheckQual
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Location = new System.Drawing.Point(12, 196);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(86, 21);
-            this.checkBox3.TabIndex = 9;
-            this.checkBox3.Text = "Qualified";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.CheckQual.AutoSize = true;
+            this.CheckQual.Location = new System.Drawing.Point(12, 196);
+            this.CheckQual.Name = "CheckQual";
+            this.CheckQual.Size = new System.Drawing.Size(86, 21);
+            this.CheckQual.TabIndex = 9;
+            this.CheckQual.Text = "Qualified";
+            this.CheckQual.UseVisualStyleBackColor = true;
             // 
-            // checkBox4
+            // CheckPen
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Location = new System.Drawing.Point(12, 223);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(82, 21);
-            this.checkBox4.TabIndex = 10;
-            this.checkBox4.Text = "Pending";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.CheckPen.AutoSize = true;
+            this.CheckPen.Location = new System.Drawing.Point(163, 169);
+            this.CheckPen.Name = "CheckPen";
+            this.CheckPen.Size = new System.Drawing.Size(82, 21);
+            this.CheckPen.TabIndex = 10;
+            this.CheckPen.Text = "Pending";
+            this.CheckPen.UseVisualStyleBackColor = true;
             // 
-            // checkBox5
+            // CheckGrave
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Location = new System.Drawing.Point(13, 251);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(97, 21);
-            this.checkBox5.TabIndex = 11;
-            this.checkBox5.Text = "Graveyard";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.CheckGrave.AutoSize = true;
+            this.CheckGrave.Location = new System.Drawing.Point(163, 142);
+            this.CheckGrave.Name = "CheckGrave";
+            this.CheckGrave.Size = new System.Drawing.Size(97, 21);
+            this.CheckGrave.TabIndex = 11;
+            this.CheckGrave.Text = "Graveyard";
+            this.CheckGrave.UseVisualStyleBackColor = true;
             // 
             // WinSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(262, 353);
-            this.Controls.Add(this.checkBox5);
-            this.Controls.Add(this.checkBox4);
-            this.Controls.Add(this.checkBox3);
-            this.Controls.Add(this.checkBox2);
-            this.Controls.Add(this.checkBox1);
+            this.ClientSize = new System.Drawing.Size(324, 284);
+            this.Controls.Add(this.CheckGrave);
+            this.Controls.Add(this.CheckPen);
+            this.Controls.Add(this.CheckQual);
+            this.Controls.Add(this.CheckLove);
+            this.Controls.Add(this.CheckRanked);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.SaveBtn);
             this.Controls.Add(this.RadioBtnModern);
@@ -197,10 +195,10 @@
         private System.Windows.Forms.RadioButton RadioBtnModern;
         private System.Windows.Forms.Button SaveBtn;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
+        private System.Windows.Forms.CheckBox CheckRanked;
+        private System.Windows.Forms.CheckBox CheckLove;
+        private System.Windows.Forms.CheckBox CheckQual;
+        private System.Windows.Forms.CheckBox CheckPen;
+        private System.Windows.Forms.CheckBox CheckGrave;
     }
 }

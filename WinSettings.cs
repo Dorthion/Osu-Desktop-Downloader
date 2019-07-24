@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace OsuDesktop
@@ -26,24 +19,22 @@ namespace OsuDesktop
             RadioBtnClassic.Checked = Properties.Settings.Default.Style;
             RadioBtnModern.Checked = !Properties.Settings.Default.Style;
             LanguageList.SelectedItem = Properties.Settings.Default.Language;
-        }
-
-        private void RadioBtnClassic_CheckedChanged(object sender, EventArgs e)
-        {
-            RadioBtnModern.Checked = false;
-        }
-
-        private void RadioBtnModern_CheckedChanged(object sender, EventArgs e)
-        {
-            RadioBtnModern.Checked = true;
+            CheckRanked.Checked = Properties.Settings.Default.Ranked;
+            CheckLove.Checked = Properties.Settings.Default.LoveState;
+            CheckQual.Checked = Properties.Settings.Default.Qualified;
+            CheckGrave.Checked = Properties.Settings.Default.Graveyard;
+            CheckPen.Checked = Properties.Settings.Default.Pending;
         }
 
         private void SaveSettings()
         {
-            if (RadioBtnClassic.Checked)
-                Properties.Settings.Default.Style = true;
-            else Properties.Settings.Default.Style = false;
+            Properties.Settings.Default.Style = RadioBtnClassic.Checked;
             Properties.Settings.Default.Language = LanguageList.SelectedItem.ToString();
+            Properties.Settings.Default.Ranked = CheckRanked.Checked;
+            Properties.Settings.Default.LoveState = CheckLove.Checked;
+            Properties.Settings.Default.Qualified = CheckQual.Checked;
+            Properties.Settings.Default.Graveyard = CheckGrave.Checked;
+            Properties.Settings.Default.Pending = CheckPen.Checked;
             Properties.Settings.Default.Save();
         }
     }
