@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.LanguageList = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.button1 = new System.Windows.Forms.Button();
+            this.RadioBtnClassic = new System.Windows.Forms.RadioButton();
+            this.RadioBtnModern = new System.Windows.Forms.RadioButton();
+            this.SaveBtn = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
@@ -51,16 +51,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Language";
             // 
-            // comboBox1
+            // LanguageList
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.LanguageList.FormattingEnabled = true;
+            this.LanguageList.Items.AddRange(new object[] {
             "English",
             "Polski"});
-            this.comboBox1.Location = new System.Drawing.Point(12, 82);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(240, 24);
-            this.comboBox1.TabIndex = 1;
+            this.LanguageList.Location = new System.Drawing.Point(12, 82);
+            this.LanguageList.Name = "LanguageList";
+            this.LanguageList.Size = new System.Drawing.Size(240, 24);
+            this.LanguageList.TabIndex = 1;
             // 
             // label2
             // 
@@ -71,36 +71,37 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Style";
             // 
-            // radioButton1
+            // RadioBtnClassic
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(12, 29);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(110, 21);
-            this.radioButton1.TabIndex = 3;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.RadioBtnClassic.AutoSize = true;
+            this.RadioBtnClassic.Location = new System.Drawing.Point(12, 29);
+            this.RadioBtnClassic.Name = "RadioBtnClassic";
+            this.RadioBtnClassic.Size = new System.Drawing.Size(108, 21);
+            this.RadioBtnClassic.TabIndex = 3;
+            this.RadioBtnClassic.Text = "Classic Style";
+            this.RadioBtnClassic.UseVisualStyleBackColor = true;
+            this.RadioBtnClassic.CheckedChanged += new System.EventHandler(this.RadioBtnClassic_CheckedChanged);
             // 
-            // radioButton2
+            // RadioBtnModern
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(140, 29);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(110, 21);
-            this.radioButton2.TabIndex = 4;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.RadioBtnModern.AutoSize = true;
+            this.RadioBtnModern.Location = new System.Drawing.Point(140, 29);
+            this.RadioBtnModern.Name = "RadioBtnModern";
+            this.RadioBtnModern.Size = new System.Drawing.Size(112, 21);
+            this.RadioBtnModern.TabIndex = 4;
+            this.RadioBtnModern.Text = "Modern Style";
+            this.RadioBtnModern.UseVisualStyleBackColor = true;
+            this.RadioBtnModern.CheckedChanged += new System.EventHandler(this.RadioBtnModern_CheckedChanged);
             // 
-            // button1
+            // SaveBtn
             // 
-            this.button1.Location = new System.Drawing.Point(77, 297);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(105, 44);
-            this.button1.TabIndex = 5;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
+            this.SaveBtn.Location = new System.Drawing.Point(77, 297);
+            this.SaveBtn.Name = "SaveBtn";
+            this.SaveBtn.Size = new System.Drawing.Size(105, 44);
+            this.SaveBtn.TabIndex = 5;
+            this.SaveBtn.Text = "Save";
+            this.SaveBtn.UseVisualStyleBackColor = true;
+            this.SaveBtn.Click += new System.EventHandler(this.SaveBtn_Click);
             // 
             // label3
             // 
@@ -172,14 +173,16 @@
             this.Controls.Add(this.checkBox2);
             this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.radioButton2);
-            this.Controls.Add(this.radioButton1);
+            this.Controls.Add(this.SaveBtn);
+            this.Controls.Add(this.RadioBtnModern);
+            this.Controls.Add(this.RadioBtnClassic);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.LanguageList);
             this.Controls.Add(this.label1);
             this.Name = "WinSettings";
             this.Text = "ODR Settings";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.WinSettings_FormClosed);
+            this.Load += new System.EventHandler(this.WinSettings_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,11 +191,11 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox LanguageList;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.RadioButton RadioBtnClassic;
+        private System.Windows.Forms.RadioButton RadioBtnModern;
+        private System.Windows.Forms.Button SaveBtn;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.CheckBox checkBox2;
