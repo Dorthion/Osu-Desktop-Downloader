@@ -61,11 +61,11 @@ namespace OsuDesktop.Resources {
         }
         
         /// <summary>
-        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nazwa Beatmapy:.
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Artysta:.
         /// </summary>
-        internal static string BeatmapName {
+        internal static string Artist {
             get {
-                return ResourceManager.GetString("BeatmapName", resourceCulture);
+                return ResourceManager.GetString("Artist", resourceCulture);
             }
         }
         
@@ -79,11 +79,38 @@ namespace OsuDesktop.Resources {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu BPM:.
+        /// </summary>
+        internal static string BPM {
+            get {
+                return ResourceManager.GetString("BPM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Styl Klasyczny.
         /// </summary>
         internal static string ClassicStyle {
             get {
                 return ResourceManager.GetString("ClassicStyle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Twórca:.
+        /// </summary>
+        internal static string Creator {
+            get {
+                return ResourceManager.GetString("Creator", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Nazwa Poziomu:.
+        /// </summary>
+        internal static string Difficulty {
+            get {
+                return ResourceManager.GetString("Difficulty", resourceCulture);
             }
         }
         
@@ -124,6 +151,15 @@ namespace OsuDesktop.Resources {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Przejścia/Próby:.
+        /// </summary>
+        internal static string PassTried {
+            get {
+                return ResourceManager.GetString("PassTried", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Oczekujące.
         /// </summary>
         internal static string Pending {
@@ -160,11 +196,38 @@ namespace OsuDesktop.Resources {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Trudność:.
+        /// </summary>
+        internal static string Stars {
+            get {
+                return ResourceManager.GetString("Stars", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Styl.
         /// </summary>
         internal static string Style {
             get {
                 return ResourceManager.GetString("Style", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Data Przesłania:.
+        /// </summary>
+        internal static string SubmitDate {
+            get {
+                return ResourceManager.GetString("SubmitDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Tytuł:.
+        /// </summary>
+        internal static string Title {
+            get {
+                return ResourceManager.GetString("Title", resourceCulture);
             }
         }
     }

@@ -22,6 +22,7 @@ namespace OsuDesktop
     {
         protected int RandomNumber { get; set; }
         protected string ApiCode;
+        protected int SelectedBeatmap = 0;
 
         private List<Beatmap> JsonText { get; set; }
 
@@ -70,6 +71,7 @@ namespace OsuDesktop
             SongImg.Image = null;
             RandomNumber = Rng();
             DownloadJson();
+            ChangeMainText();
             ChangeImg();
             RngNumText.Text = RandomNumber.ToString();
         }
@@ -84,10 +86,20 @@ namespace OsuDesktop
                 if (FullJsonText != "[]")
                 {
                     JsonText = JsonConvert.DeserializeObject<List<Beatmap>>(FullJsonText);
-                    Console.WriteLine(JsonText.ElementAt(0).title);
-                    SongNameText.Text = rm.GetString("BeatmapName") + " " + JsonText.ElementAt(0).title;
+                    //Console.WriteLine(JsonText.ElementAt(0).title);
                 }
             }
+        }
+
+        private void ChangeMainText()
+        {
+            TitleText.Text = rm.GetString("Title") + " " + JsonText.ElementAt(SelectedBeatmap).title;
+            ArtistText.Text = rm.GetString("Artist") + " " + JsonText.ElementAt(SelectedBeatmap).artist;
+            CreatorText.Text = rm.GetString("Creator") + " " + JsonText.ElementAt(SelectedBeatmap).creator;
+            DiffNameText.Text = rm.GetString("Difficulty") + " " + JsonText.ElementAt(SelectedBeatmap).difficultyrating;
+            PassTriedText.Text = rm.GetString("PassTried") + " " + JsonText.ElementAt(SelectedBeatmap).passcount
+                + "/" + JsonText.ElementAt(SelectedBeatmap).playcount;
+
         }
 
         private void ChangeImg()

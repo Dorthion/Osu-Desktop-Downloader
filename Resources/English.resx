@@ -117,14 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BeatmapName" xml:space="preserve">
-    <value>Beatmap Name:</value>
+  <data name="Artist" xml:space="preserve">
+    <value>Artist:</value>
   </data>
   <data name="BeatmapTypes" xml:space="preserve">
     <value>Beatmap Types</value>
   </data>
+  <data name="BPM" xml:space="preserve">
+    <value>BPM:</value>
+  </data>
   <data name="ClassicStyle" xml:space="preserve">
     <value>Classic Style</value>
+  </data>
+  <data name="Creator" xml:space="preserve">
+    <value>Creator:</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Difficulty Name:</value>
   </data>
   <data name="Graveyard" xml:space="preserve">
     <value>Graveyard</value>
@@ -138,6 +147,9 @@
   <data name="ModernStyle" xml:space="preserve">
     <value>Modern Style</value>
   </data>
+  <data name="PassTried" xml:space="preserve">
+    <value>Pass/Tried:</value>
+  </data>
   <data name="Pending" xml:space="preserve">
     <value>Pending</value>
   </data>
@@ -150,7 +162,16 @@
   <data name="Save" xml:space="preserve">
     <value>Save</value>
   </data>
+  <data name="Stars" xml:space="preserve">
+    <value>Stars:</value>
+  </data>
   <data name="Style" xml:space="preserve">
-    <value>Style</value>
+    <value>Style:</value>
+  </data>
+  <data name="SubmitDate" xml:space="preserve">
+    <value>Submit Date:</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Title:</value>
   </data>
 </root>

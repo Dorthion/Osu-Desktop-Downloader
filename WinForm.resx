@@ -117,105 +117,534 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="SongImg.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="&gt;&gt;RandomButtom.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;RandomButtom.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="RandomButtom.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;DownloadBtn.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="RngNumText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="RngNumText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Verdana, 14pt</value>
+  </data>
+  <data name="RngNumText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 26</value>
+  </data>
+  <data name="RngNumText.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>100, 40</value>
+  </data>
+  <data name="RngNumText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 40</value>
+  </data>
+  <data name="RngNumText.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="RngNumText.Text" xml:space="preserve">
+    <value>Rng</value>
+  </data>
+  <data name="&gt;&gt;RngNumText.Name" xml:space="preserve">
+    <value>RngNumText</value>
+  </data>
+  <data name="&gt;&gt;RngNumText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RngNumText.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;RngNumText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>738, 222</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 100</value>
+  </data>
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="BeatmapText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BeatmapText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>762, 445</value>
+  </data>
+  <data name="BeatmapText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 34</value>
+  </data>
+  <data name="BeatmapText.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="BeatmapText.Text" xml:space="preserve">
+    <value>    BR
+Ver 0.1</value>
+  </data>
+  <data name="&gt;&gt;BeatmapText.Name" xml:space="preserve">
+    <value>BeatmapText</value>
+  </data>
+  <data name="&gt;&gt;BeatmapText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BeatmapText.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BeatmapText.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="StarsText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="StarsText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="StarsText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="StarsText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>358, 201</value>
+  </data>
+  <data name="StarsText.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>355, 32</value>
+  </data>
+  <data name="StarsText.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>355, 32</value>
+  </data>
+  <data name="StarsText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 32</value>
+  </data>
+  <data name="StarsText.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="StarsText.Text" xml:space="preserve">
+    <value>Stars:</value>
+  </data>
+  <data name="StarsText.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;StarsText.Name" xml:space="preserve">
+    <value>StarsText</value>
+  </data>
+  <data name="&gt;&gt;StarsText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;StarsText.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;StarsText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="SubmitDateText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="SubmitDateText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
+  </data>
+  <data name="SubmitDateText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="SubmitDateText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 233</value>
+  </data>
+  <data name="SubmitDateText.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="SubmitDateText.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="SubmitDateText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="SubmitDateText.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="SubmitDateText.Text" xml:space="preserve">
+    <value>Submit Date:</value>
+  </data>
+  <data name="SubmitDateText.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;SubmitDateText.Name" xml:space="preserve">
+    <value>SubmitDateText</value>
+  </data>
+  <data name="&gt;&gt;SubmitDateText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SubmitDateText.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;SubmitDateText.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BPMText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BPMText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
+  </data>
+  <data name="BPMText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="BPMText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 201</value>
+  </data>
+  <data name="BPMText.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>355, 32</value>
+  </data>
+  <data name="BPMText.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>355, 32</value>
+  </data>
+  <data name="BPMText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>355, 32</value>
+  </data>
+  <data name="BPMText.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="BPMText.Text" xml:space="preserve">
+    <value>BPM:</value>
+  </data>
+  <data name="BPMText.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;BPMText.Name" xml:space="preserve">
+    <value>BPMText</value>
+  </data>
+  <data name="&gt;&gt;BPMText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BPMText.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;BPMText.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="PlayTimeText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PlayTimeText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
+  </data>
+  <data name="PlayTimeText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PlayTimeText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 169</value>
+  </data>
+  <data name="PlayTimeText.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="PlayTimeText.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="PlayTimeText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="PlayTimeText.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="PlayTimeText.Text" xml:space="preserve">
+    <value>Playtime/Length:</value>
+  </data>
+  <data name="PlayTimeText.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;PlayTimeText.Name" xml:space="preserve">
+    <value>PlayTimeText</value>
+  </data>
+  <data name="&gt;&gt;PlayTimeText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PlayTimeText.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;PlayTimeText.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="PassTriedText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="PassTriedText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
+  </data>
+  <data name="PassTriedText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="PassTriedText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 137</value>
+  </data>
+  <data name="PassTriedText.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="PassTriedText.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="PassTriedText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="PassTriedText.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="PassTriedText.Text" xml:space="preserve">
+    <value>Pass/Tried:</value>
+  </data>
+  <data name="PassTriedText.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;PassTriedText.Name" xml:space="preserve">
+    <value>PassTriedText</value>
+  </data>
+  <data name="&gt;&gt;PassTriedText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PassTriedText.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;PassTriedText.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="DiffNameText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DiffNameText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
+  </data>
+  <data name="DiffNameText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="DiffNameText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 105</value>
+  </data>
+  <data name="DiffNameText.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="DiffNameText.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="DiffNameText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="DiffNameText.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="DiffNameText.Text" xml:space="preserve">
+    <value>Difficulty Name:</value>
+  </data>
+  <data name="DiffNameText.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;DiffNameText.Name" xml:space="preserve">
+    <value>DiffNameText</value>
+  </data>
+  <data name="&gt;&gt;DiffNameText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DiffNameText.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;DiffNameText.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="CreatorText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="CreatorText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
+  </data>
+  <data name="CreatorText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="CreatorText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 73</value>
+  </data>
+  <data name="CreatorText.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="CreatorText.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="CreatorText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="CreatorText.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="CreatorText.Text" xml:space="preserve">
+    <value>Creator:</value>
+  </data>
+  <data name="CreatorText.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;CreatorText.Name" xml:space="preserve">
+    <value>CreatorText</value>
+  </data>
+  <data name="&gt;&gt;CreatorText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;CreatorText.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;CreatorText.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="ArtistText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ArtistText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
+  </data>
+  <data name="ArtistText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="ArtistText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 41</value>
+  </data>
+  <data name="ArtistText.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="ArtistText.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="ArtistText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="ArtistText.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="ArtistText.Text" xml:space="preserve">
+    <value>Artist:</value>
+  </data>
+  <data name="ArtistText.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;ArtistText.Name" xml:space="preserve">
+    <value>ArtistText</value>
+  </data>
+  <data name="&gt;&gt;ArtistText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ArtistText.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;ArtistText.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="TitleText.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TitleText.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
+  </data>
+  <data name="TitleText.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 9</value>
+  </data>
+  <data name="TitleText.MaximumSize" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="TitleText.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="TitleText.Size" type="System.Drawing.Size, System.Drawing">
+    <value>710, 32</value>
+  </data>
+  <data name="TitleText.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="TitleText.Text" xml:space="preserve">
+    <value>Title:</value>
+  </data>
+  <data name="TitleText.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;TitleText.Name" xml:space="preserve">
+    <value>TitleText</value>
+  </data>
+  <data name="&gt;&gt;TitleText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TitleText.Parent" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;TitleText.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 222</value>
+  </data>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>720, 268</value>
+  </data>
+  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
+    <value>panel2</value>
+  </data>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="panel3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>738, 328</value>
+  </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 100</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
   </data>
-  <data name="SongNameText.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
+    <value>panel3</value>
   </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;SongImg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="BeatmapText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="RngNumText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 26</value>
-  </data>
-  <data name="&gt;&gt;DownloadBtn.Name" xml:space="preserve">
-    <value>DownloadBtn</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>846, 502</value>
-  </data>
-  <data name="BeatmapText.Text" xml:space="preserve">
-    <value>  ODR
-Ver 1.0</value>
-  </data>
-  <data name="&gt;&gt;SongImg.Name" xml:space="preserve">
-    <value>SongImg</value>
-  </data>
-  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
-  </data>
-  <data name="&gt;&gt;RngNumText.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 100</value>
-  </data>
-  <data name="RngNumText.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>100, 40</value>
-  </data>
-  <data name="RngNumText.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="BeatmapText.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;SongNameText.Parent" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="&gt;&gt;SongImg.Parent" xml:space="preserve">
+  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;SongNameText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="RngNumText.Text" xml:space="preserve">
-    <value>Rng</value>
+  <data name="SongImg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
   </data>
-  <data name="SongNameText.Text" xml:space="preserve">
-    <value>Beatmap Name</value>
+  <data name="SongImg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>720, 200</value>
+  </data>
+  <data name="SongImg.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="SongImg.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
   </data>
-  <data name="DownloadBtn.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 100</value>
+  <data name="&gt;&gt;SongImg.Name" xml:space="preserve">
+    <value>SongImg</value>
+  </data>
+  <data name="&gt;&gt;SongImg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SongImg.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;SongImg.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="DownloadBtn.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -349,89 +778,29 @@ Ver 1.0</value>
         QMYXAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="&gt;&gt;panel3.Name" xml:space="preserve">
-    <value>panel3</value>
+  <data name="DownloadBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Zoom</value>
   </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>3</value>
+  <data name="DownloadBtn.Location" type="System.Drawing.Point, System.Drawing">
+    <value>738, 117</value>
   </data>
-  <data name="&gt;&gt;RngNumText.Name" xml:space="preserve">
-    <value>RngNumText</value>
+  <data name="DownloadBtn.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 100</value>
   </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>720, 268</value>
+  <data name="DownloadBtn.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;DownloadBtn.Name" xml:space="preserve">
+    <value>DownloadBtn</value>
+  </data>
+  <data name="&gt;&gt;DownloadBtn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;DownloadBtn.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;panel3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;BeatmapText.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;RngNumText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="SongNameText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="&gt;&gt;BeatmapText.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>WinForm</value>
-  </data>
-  <data name="&gt;&gt;RandomButtom.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="RandomButtom.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 100</value>
-  </data>
-  <data name="&gt;&gt;BeatmapText.Name" xml:space="preserve">
-    <value>BeatmapText</value>
-  </data>
-  <data name="SongImg.Size" type="System.Drawing.Size, System.Drawing">
-    <value>720, 200</value>
-  </data>
-  <data name="&gt;&gt;RandomButtom.Name" xml:space="preserve">
-    <value>RandomButtom</value>
-  </data>
-  <data name="&gt;&gt;BeatmapText.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="panel3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="RngNumText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 40</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SongNameText.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="RandomButtom.Location" type="System.Drawing.Point, System.Drawing">
-    <value>738, 12</value>
-  </data>
-  <data name="RngNumText.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>Osu! Desktop Randomizer</value>
-  </data>
-  <data name="RandomButtom.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="&gt;&gt;DownloadBtn.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="RandomButtom.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -945,73 +1314,46 @@ Ver 1.0</value>
         gg==
 </value>
   </data>
-  <data name="SongNameText.TabIndex" type="System.Int32, mscorlib">
+  <data name="RandomButtom.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
+  </data>
+  <data name="RandomButtom.Location" type="System.Drawing.Point, System.Drawing">
+    <value>738, 12</value>
+  </data>
+  <data name="RandomButtom.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 100</value>
+  </data>
+  <data name="RandomButtom.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="SongNameText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>223, 32</value>
+  <data name="&gt;&gt;RandomButtom.Name" xml:space="preserve">
+    <value>RandomButtom</value>
   </data>
-  <data name="SongNameText.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
+  <data name="&gt;&gt;RandomButtom.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="DownloadBtn.Location" type="System.Drawing.Point, System.Drawing">
-    <value>738, 117</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;RandomButtom.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="SongImg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="SongNameText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 9</value>
-  </data>
-  <data name="RngNumText.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Verdana, 14pt</value>
-  </data>
-  <data name="&gt;&gt;DownloadBtn.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="BeatmapText.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 34</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>738, 222</value>
-  </data>
-  <data name="&gt;&gt;SongImg.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;panel2.Name" xml:space="preserve">
-    <value>panel2</value>
-  </data>
-  <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 222</value>
-  </data>
-  <data name="&gt;&gt;SongNameText.Name" xml:space="preserve">
-    <value>SongNameText</value>
-  </data>
-  <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>738, 328</value>
-  </data>
-  <data name="BeatmapText.Location" type="System.Drawing.Point, System.Drawing">
-    <value>762, 445</value>
-  </data>
-  <data name="&gt;&gt;panel2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="DownloadBtn.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="&gt;&gt;RngNumText.Parent" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="DownloadBtn.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+  <data name="&gt;&gt;RandomButtom.ZOrder" xml:space="preserve">
+    <value>6</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>846, 502</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Beatmap Randomizer</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>WinForm</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>

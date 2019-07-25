@@ -117,14 +117,23 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BeatmapName" xml:space="preserve">
-    <value>Nazwa Beatmapy:</value>
+  <data name="Artist" xml:space="preserve">
+    <value>Artysta:</value>
   </data>
   <data name="BeatmapTypes" xml:space="preserve">
     <value>Typy Beatmap</value>
   </data>
+  <data name="BPM" xml:space="preserve">
+    <value>BPM:</value>
+  </data>
   <data name="ClassicStyle" xml:space="preserve">
     <value>Styl Klasyczny</value>
+  </data>
+  <data name="Creator" xml:space="preserve">
+    <value>Twórca:</value>
+  </data>
+  <data name="Difficulty" xml:space="preserve">
+    <value>Nazwa Poziomu:</value>
   </data>
   <data name="Graveyard" xml:space="preserve">
     <value>Porzucone</value>
@@ -138,6 +147,9 @@
   <data name="ModernStyle" xml:space="preserve">
     <value>Styl Nowoczesny</value>
   </data>
+  <data name="PassTried" xml:space="preserve">
+    <value>Przejścia/Próby:</value>
+  </data>
   <data name="Pending" xml:space="preserve">
     <value>Oczekujące</value>
   </data>
@@ -150,7 +162,16 @@
   <data name="Save" xml:space="preserve">
     <value>Zapisz</value>
   </data>
+  <data name="Stars" xml:space="preserve">
+    <value>Trudność:</value>
+  </data>
   <data name="Style" xml:space="preserve">
     <value>Styl</value>
+  </data>
+  <data name="SubmitDate" xml:space="preserve">
+    <value>Data Przesłania:</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>Tytuł:</value>
   </data>
 </root>
