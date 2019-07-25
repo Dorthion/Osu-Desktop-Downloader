@@ -117,11 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;RngNumText.Name" xml:space="preserve">
+    <value>RngNumText</value>
+  </data>
+  <data name="&gt;&gt;RngNumText.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;RngNumText.Parent" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;RngNumText.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>738, 222</value>
+  </data>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 100</value>
+  </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
+    <value>panel1</value>
+  </data>
+  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="RngNumText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="RngNumText.Font" type="System.Drawing.Font, System.Drawing">
     <value>Verdana, 14pt</value>
   </data>
@@ -151,27 +184,6 @@
   </data>
   <data name="&gt;&gt;RngNumText.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>738, 222</value>
-  </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>100, 100</value>
-  </data>
-  <data name="panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;panel1.Name" xml:space="preserve">
-    <value>panel1</value>
-  </data>
-  <data name="&gt;&gt;panel1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>3</value>
   </data>
   <data name="BeatmapText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -328,46 +340,46 @@ Ver 0.1</value>
   <data name="&gt;&gt;BPMText.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="PlayTimeText.AutoSize" type="System.Boolean, mscorlib">
+  <data name="DrainLengthText.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="PlayTimeText.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="DrainLengthText.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 16.2pt, style=Bold</value>
   </data>
-  <data name="PlayTimeText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+  <data name="DrainLengthText.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="PlayTimeText.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="DrainLengthText.Location" type="System.Drawing.Point, System.Drawing">
     <value>3, 169</value>
   </data>
-  <data name="PlayTimeText.MaximumSize" type="System.Drawing.Size, System.Drawing">
+  <data name="DrainLengthText.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>710, 32</value>
   </data>
-  <data name="PlayTimeText.MinimumSize" type="System.Drawing.Size, System.Drawing">
+  <data name="DrainLengthText.MinimumSize" type="System.Drawing.Size, System.Drawing">
     <value>710, 32</value>
   </data>
-  <data name="PlayTimeText.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="DrainLengthText.Size" type="System.Drawing.Size, System.Drawing">
     <value>710, 32</value>
   </data>
-  <data name="PlayTimeText.TabIndex" type="System.Int32, mscorlib">
+  <data name="DrainLengthText.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="PlayTimeText.Text" xml:space="preserve">
-    <value>Playtime/Length:</value>
+  <data name="DrainLengthText.Text" xml:space="preserve">
+    <value>Drain/Length:</value>
   </data>
-  <data name="PlayTimeText.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+  <data name="DrainLengthText.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
   </data>
-  <data name="&gt;&gt;PlayTimeText.Name" xml:space="preserve">
-    <value>PlayTimeText</value>
+  <data name="&gt;&gt;DrainLengthText.Name" xml:space="preserve">
+    <value>DrainLengthText</value>
   </data>
-  <data name="&gt;&gt;PlayTimeText.Type" xml:space="preserve">
+  <data name="&gt;&gt;DrainLengthText.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;PlayTimeText.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DrainLengthText.Parent" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="&gt;&gt;PlayTimeText.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;DrainLengthText.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="PassTriedText.AutoSize" type="System.Boolean, mscorlib">

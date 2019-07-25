@@ -47,18 +47,8 @@ namespace OsuDesktop
         {
             int Number;
             Random rng = new Random();
-            Number = rng.Next(1, 100000);
+            Number = rng.Next(1, 1000000);
             return Number;
-        }
-
-        private void LoadLanguage()
-        {
-            switch (Properties.Settings.Default.Language)
-            {
-                case "English":
-                   // rm = Resources.en;
-                    break;
-            }
         }
 
         private void DownloadBtn_Click(object sender, EventArgs e)
@@ -70,8 +60,7 @@ namespace OsuDesktop
         {
             SongImg.Image = null;
             RandomNumber = Rng();
-            DownloadJson();
-            ChangeMainText();
+            DownloadJson();   
             ChangeImg();
             RngNumText.Text = RandomNumber.ToString();
         }
@@ -87,6 +76,7 @@ namespace OsuDesktop
                 {
                     JsonText = JsonConvert.DeserializeObject<List<Beatmap>>(FullJsonText);
                     //Console.WriteLine(JsonText.ElementAt(0).title);
+                    ChangeMainText();
                 }
             }
         }
@@ -96,10 +86,14 @@ namespace OsuDesktop
             TitleText.Text = rm.GetString("Title") + " " + JsonText.ElementAt(SelectedBeatmap).title;
             ArtistText.Text = rm.GetString("Artist") + " " + JsonText.ElementAt(SelectedBeatmap).artist;
             CreatorText.Text = rm.GetString("Creator") + " " + JsonText.ElementAt(SelectedBeatmap).creator;
-            DiffNameText.Text = rm.GetString("Difficulty") + " " + JsonText.ElementAt(SelectedBeatmap).difficultyrating;
+            DiffNameText.Text = rm.GetString("Difficulty") + " " + JsonText.ElementAt(SelectedBeatmap).version;
             PassTriedText.Text = rm.GetString("PassTried") + " " + JsonText.ElementAt(SelectedBeatmap).passcount
                 + "/" + JsonText.ElementAt(SelectedBeatmap).playcount;
-
+            DrainLengthText.Text = rm.GetString("DrainLength") + " " + JsonText.ElementAt(SelectedBeatmap).hit_length
+                + "/" + JsonText.ElementAt(SelectedBeatmap).total_length + " " + rm.GetString("Seconds");
+            BPMText.Text = rm.GetString("BPM") + " " + JsonText.ElementAt(SelectedBeatmap).bpm;
+            StarsText.Text = rm.GetString("Stars") + " " + String.Format("{0:#.##}",JsonText.ElementAt(SelectedBeatmap).difficultyrating);
+            SubmitDateText.Text = rm.GetString("SubmitDate") + " " + JsonText.ElementAt(SelectedBeatmap).submit_date;
         }
 
         private void ChangeImg()

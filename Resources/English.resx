@@ -135,6 +135,9 @@
   <data name="Difficulty" xml:space="preserve">
     <value>Difficulty Name:</value>
   </data>
+  <data name="DrainLength" xml:space="preserve">
+    <value>Drain/Length:</value>
+  </data>
   <data name="Graveyard" xml:space="preserve">
     <value>Graveyard</value>
   </data>
@@ -161,6 +164,9 @@
   </data>
   <data name="Save" xml:space="preserve">
     <value>Save</value>
+  </data>
+  <data name="Seconds" xml:space="preserve">
+    <value> (Sec.)</value>
   </data>
   <data name="Stars" xml:space="preserve">
     <value>Stars:</value>

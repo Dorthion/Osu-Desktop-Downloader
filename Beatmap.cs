@@ -37,5 +37,5 @@ class Beatmap
     public string max_combo { get; set; }
     public string diff_aim { get; set; }
     public string diff_speed { get; set; }
-    public string difficultyrating { get; set; }
+    public double difficultyrating { get; set; }
 }

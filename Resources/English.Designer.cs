@@ -115,6 +115,15 @@ namespace OsuDesktop.Resources {
         }
         
         /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu Drain/Length:.
+        /// </summary>
+        internal static string DrainLength {
+            get {
+                return ResourceManager.GetString("DrainLength", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         /// Wyszukuje zlokalizowany ciąg podobny do ciągu Graveyard.
         /// </summary>
         internal static string Graveyard {
@@ -192,6 +201,15 @@ namespace OsuDesktop.Resources {
         internal static string Save {
             get {
                 return ResourceManager.GetString("Save", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        /// Wyszukuje zlokalizowany ciąg podobny do ciągu  (Sec.).
+        /// </summary>
+        internal static string Seconds {
+            get {
+                return ResourceManager.GetString("Seconds", resourceCulture);
             }
         }
         

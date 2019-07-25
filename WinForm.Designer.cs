@@ -33,19 +33,19 @@
             this.RngNumText = new System.Windows.Forms.Label();
             this.BeatmapText = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.StarsText = new System.Windows.Forms.Label();
+            this.SubmitDateText = new System.Windows.Forms.Label();
+            this.BPMText = new System.Windows.Forms.Label();
+            this.DrainLengthText = new System.Windows.Forms.Label();
+            this.PassTriedText = new System.Windows.Forms.Label();
+            this.DiffNameText = new System.Windows.Forms.Label();
+            this.CreatorText = new System.Windows.Forms.Label();
+            this.ArtistText = new System.Windows.Forms.Label();
             this.TitleText = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.SongImg = new System.Windows.Forms.PictureBox();
             this.DownloadBtn = new System.Windows.Forms.Button();
             this.RandomButtom = new System.Windows.Forms.Button();
-            this.ArtistText = new System.Windows.Forms.Label();
-            this.CreatorText = new System.Windows.Forms.Label();
-            this.DiffNameText = new System.Windows.Forms.Label();
-            this.PassTriedText = new System.Windows.Forms.Label();
-            this.PlayTimeText = new System.Windows.Forms.Label();
-            this.BPMText = new System.Windows.Forms.Label();
-            this.SubmitDateText = new System.Windows.Forms.Label();
-            this.StarsText = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SongImg)).BeginInit();
@@ -76,7 +76,7 @@
             this.panel2.Controls.Add(this.StarsText);
             this.panel2.Controls.Add(this.SubmitDateText);
             this.panel2.Controls.Add(this.BPMText);
-            this.panel2.Controls.Add(this.PlayTimeText);
+            this.panel2.Controls.Add(this.DrainLengthText);
             this.panel2.Controls.Add(this.PassTriedText);
             this.panel2.Controls.Add(this.DiffNameText);
             this.panel2.Controls.Add(this.CreatorText);
@@ -84,6 +84,46 @@
             this.panel2.Controls.Add(this.TitleText);
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
+            // 
+            // StarsText
+            // 
+            resources.ApplyResources(this.StarsText, "StarsText");
+            this.StarsText.Name = "StarsText";
+            // 
+            // SubmitDateText
+            // 
+            resources.ApplyResources(this.SubmitDateText, "SubmitDateText");
+            this.SubmitDateText.Name = "SubmitDateText";
+            // 
+            // BPMText
+            // 
+            resources.ApplyResources(this.BPMText, "BPMText");
+            this.BPMText.Name = "BPMText";
+            // 
+            // DrainLengthText
+            // 
+            resources.ApplyResources(this.DrainLengthText, "DrainLengthText");
+            this.DrainLengthText.Name = "DrainLengthText";
+            // 
+            // PassTriedText
+            // 
+            resources.ApplyResources(this.PassTriedText, "PassTriedText");
+            this.PassTriedText.Name = "PassTriedText";
+            // 
+            // DiffNameText
+            // 
+            resources.ApplyResources(this.DiffNameText, "DiffNameText");
+            this.DiffNameText.Name = "DiffNameText";
+            // 
+            // CreatorText
+            // 
+            resources.ApplyResources(this.CreatorText, "CreatorText");
+            this.CreatorText.Name = "CreatorText";
+            // 
+            // ArtistText
+            // 
+            resources.ApplyResources(this.ArtistText, "ArtistText");
+            this.ArtistText.Name = "ArtistText";
             // 
             // TitleText
             // 
@@ -122,46 +162,6 @@
             this.RandomButtom.UseVisualStyleBackColor = false;
             this.RandomButtom.Click += new System.EventHandler(this.RandomButton_Click);
             // 
-            // ArtistText
-            // 
-            resources.ApplyResources(this.ArtistText, "ArtistText");
-            this.ArtistText.Name = "ArtistText";
-            // 
-            // CreatorText
-            // 
-            resources.ApplyResources(this.CreatorText, "CreatorText");
-            this.CreatorText.Name = "CreatorText";
-            // 
-            // DiffNameText
-            // 
-            resources.ApplyResources(this.DiffNameText, "DiffNameText");
-            this.DiffNameText.Name = "DiffNameText";
-            // 
-            // PassTriedText
-            // 
-            resources.ApplyResources(this.PassTriedText, "PassTriedText");
-            this.PassTriedText.Name = "PassTriedText";
-            // 
-            // PlayTimeText
-            // 
-            resources.ApplyResources(this.PlayTimeText, "PlayTimeText");
-            this.PlayTimeText.Name = "PlayTimeText";
-            // 
-            // BPMText
-            // 
-            resources.ApplyResources(this.BPMText, "BPMText");
-            this.BPMText.Name = "BPMText";
-            // 
-            // SubmitDateText
-            // 
-            resources.ApplyResources(this.SubmitDateText, "SubmitDateText");
-            this.SubmitDateText.Name = "SubmitDateText";
-            // 
-            // StarsText
-            // 
-            resources.ApplyResources(this.StarsText, "StarsText");
-            this.StarsText.Name = "StarsText";
-            // 
             // WinForm
             // 
             resources.ApplyResources(this, "$this");
@@ -198,7 +198,7 @@
         private System.Windows.Forms.Label TitleText;
         private System.Windows.Forms.Label SubmitDateText;
         private System.Windows.Forms.Label BPMText;
-        private System.Windows.Forms.Label PlayTimeText;
+        private System.Windows.Forms.Label DrainLengthText;
         private System.Windows.Forms.Label PassTriedText;
         private System.Windows.Forms.Label DiffNameText;
         private System.Windows.Forms.Label CreatorText;
