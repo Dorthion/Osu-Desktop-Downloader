@@ -76,6 +76,7 @@
             this.BeatmapText.Size = new System.Drawing.Size(54, 34);
             this.BeatmapText.TabIndex = 12;
             this.BeatmapText.Text = "    BR\r\nVer 0.1";
+            this.BeatmapText.Click += new System.EventHandler(this.BeatmapText_Click);
             // 
             // panel2
             // 

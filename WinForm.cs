@@ -178,5 +178,11 @@ namespace OsuDesktop
         {
             MessageBox.Show("Cant play preview song. \nOOF.");
         }
+
+        private void BeatmapText_Click(object sender, EventArgs e)
+        {
+            WinSettings Settings = new WinSettings();
+            Settings.Show();
+        }
     }
 }

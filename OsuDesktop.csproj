@@ -99,6 +99,12 @@
     <Compile Include="WinForm.Designer.cs">
       <DependentUpon>WinForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="WinSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinSettings.Designer.cs">
+      <DependentUpon>WinSettings.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
@@ -120,6 +126,9 @@
     <EmbeddedResource Include="Resources\Polski.resx" />
     <EmbeddedResource Include="WinForm.resx">
       <DependentUpon>WinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinSettings.resx">
+      <DependentUpon>WinSettings.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
