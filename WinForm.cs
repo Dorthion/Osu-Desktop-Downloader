@@ -28,7 +28,6 @@ namespace OsuDesktop
 
         internal static string cul = Properties.Settings.Default.Language;
         internal ResourceManager rm = new ResourceManager("OsuDesktop.Resources." + cul, Assembly.GetExecutingAssembly());
-
         public WinForm()
         {
             GetApiCode();
@@ -42,7 +41,7 @@ namespace OsuDesktop
                 ApiCode = sr.ReadLine();
             }
         }
-        
+
         private int Rng()
         {
             int Number;
@@ -56,12 +55,12 @@ namespace OsuDesktop
             Process.Start("osu://dl/" + RandomNumber);
         }
 
-        private void RandomButton_Click(object sender, EventArgs e)
+        private void RandomButtom_Click(object sender, EventArgs e)
         {
             SongImg.Image = null;
             SelectedBeatmap = 0;
             RandomNumber = Rng();
-            DownloadJson();   
+            DownloadJson();
             ChangeImg();
             RngNumText.Text = RandomNumber.ToString();
         }
@@ -71,15 +70,15 @@ namespace OsuDesktop
             string FullJsonText;
             using (WebClient wc = new WebClient())
             {
-                FullJsonText = wc.DownloadString("https://osu.ppy.sh/api/get_beatmaps?k="+ApiCode +"&s="+RandomNumber.ToString());
-                while(FullJsonText == "[]")
+                FullJsonText = wc.DownloadString("https://osu.ppy.sh/api/get_beatmaps?k=" + ApiCode + "&s=" + RandomNumber.ToString());
+                while (FullJsonText == "[]")
                 {
                     RandomNumber = Rng();
                     FullJsonText = wc.DownloadString("https://osu.ppy.sh/api/get_beatmaps?k=" + ApiCode + "&s=" + RandomNumber.ToString());
                 }
-                    
+
                 JsonText = JsonConvert.DeserializeObject<List<Beatmap>>(FullJsonText);
-                ChangeMainText(); 
+                ChangeMainText();
             }
         }
 
@@ -95,7 +94,7 @@ namespace OsuDesktop
             DrainLengthText.Text = rm.GetString("DrainLength") + " " + JsonText.ElementAt(SelectedBeatmap).hit_length
                 + "/" + JsonText.ElementAt(SelectedBeatmap).total_length + " " + rm.GetString("Seconds");
             BPMText.Text = rm.GetString("BPM") + " " + JsonText.ElementAt(SelectedBeatmap).bpm;
-            StarsText.Text = rm.GetString("Stars") + " " + String.Format("{0:#.##}",JsonText.ElementAt(SelectedBeatmap).difficultyrating);
+            StarsText.Text = rm.GetString("Stars") + " " + String.Format("{0:#.##}", JsonText.ElementAt(SelectedBeatmap).difficultyrating);
             SubmitDateText.Text = rm.GetString("SubmitDate") + " " + JsonText.ElementAt(SelectedBeatmap).submit_date;
             #endregion
 
@@ -116,36 +115,32 @@ namespace OsuDesktop
 
             using (WebClient wc = new WebClient())
             {
-                try{
+                try
+                {
                     wc.DownloadFile(new Uri(BeatmapImg), result);
                 }
-                catch(WebException)
+                catch (WebException)
                 {
                     SongImg.Image = SongImg.ErrorImage;
                 }
-                finally{
-                    if(SongImg.Image!=SongImg.ErrorImage)
+                finally
+                {
+                    if (SongImg.Image != SongImg.ErrorImage)
                         SongImg.Image = Bitmap.FromFile(result);
                 }
             }
         }
 
-        private void BeatmapText_Click(object sender, EventArgs e)
-        {
-            WinSettings Settings = new WinSettings();
-            Settings.Show();
-        }
-
         private void BtnRigthList_Click(object sender, EventArgs e)
         {
-            if(JsonText != null && SelectedBeatmap + 1 < JsonText.Count)
+            if (JsonText != null && SelectedBeatmap + 1 < JsonText.Count)
             {
                 SelectedBeatmap++;
                 ChangeMainText();
             }
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void BtnLeftList_Click(object sender, EventArgs e)
         {
             if (JsonText != null && SelectedBeatmap > 0)
             {
