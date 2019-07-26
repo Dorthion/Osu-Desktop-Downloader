@@ -28,6 +28,7 @@ namespace OsuDesktop
 
         internal static string cul = Properties.Settings.Default.Language;
         internal ResourceManager rm = new ResourceManager("OsuDesktop.Resources." + cul, Assembly.GetExecutingAssembly());
+        WMPLib.WindowsMediaPlayer PreviewSong;
         public WinForm()
         {
             GetApiCode();
@@ -62,7 +63,6 @@ namespace OsuDesktop
             RandomNumber = Rng();
             DownloadJson();
             ChangeImg();
-            RngNumText.Text = RandomNumber.ToString();
         }
 
         private void DownloadJson()
@@ -99,6 +99,7 @@ namespace OsuDesktop
             #endregion
 
             ListCountText.Text = string.Format("{0}", SelectedBeatmap + 1) + "/" + JsonText.Count;
+            RngNumText.Text = RandomNumber.ToString();
         }
 
         private void ChangeImg()
@@ -147,6 +148,35 @@ namespace OsuDesktop
                 SelectedBeatmap--;
                 ChangeMainText();
             }
+        }
+
+        private void SongImg_Click(object sender, EventArgs e)
+        {
+            if(PreviewSong != null)
+            {
+                this.PreviewSong.controls.stop();
+                PreviewSong = null;
+            }  
+
+            PreviewSong = new WMPLib.WindowsMediaPlayer();
+            PreviewSong.PlayStateChange += new WMPLib._WMPOCXEvents_PlayStateChangeEventHandler(Player_PlayStateChange);
+            PreviewSong.MediaError += new WMPLib._WMPOCXEvents_MediaErrorEventHandler(Player_MediaError);
+            PreviewSong.URL = "https://b.ppy.sh/preview/" + RandomNumber + ".mp3";
+            PreviewSong.controls.play();
+        }
+
+        private void Player_PlayStateChange(int NewState)
+        {
+            if ((WMPLib.WMPPlayState)NewState == WMPLib.WMPPlayState.wmppsStopped)
+            {
+                PreviewSong = null;
+                System.GC.Collect();
+            }
+        }
+
+        private void Player_MediaError(object pMediaObject)
+        {
+            MessageBox.Show("Cant play preview song. \nOOF.");
         }
     }
 }

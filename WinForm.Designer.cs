@@ -301,6 +301,7 @@
             this.SongImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SongImg.TabIndex = 10;
             this.SongImg.TabStop = false;
+            this.SongImg.Click += new System.EventHandler(this.SongImg_Click);
             // 
             // DownloadBtn
             // 
@@ -341,7 +342,10 @@
             this.Controls.Add(this.SongImg);
             this.Controls.Add(this.DownloadBtn);
             this.Controls.Add(this.RandomButtom);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "WinForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Beatmap Randomizer";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
