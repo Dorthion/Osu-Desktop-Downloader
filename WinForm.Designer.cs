@@ -46,9 +46,14 @@
             this.SongImg = new System.Windows.Forms.PictureBox();
             this.DownloadBtn = new System.Windows.Forms.Button();
             this.RandomButtom = new System.Windows.Forms.Button();
+            this.BtnRigthList = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.ListCountText = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SongImg)).BeginInit();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -73,6 +78,9 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(121)))), ((int)(((byte)(84)))));
+            this.panel2.Controls.Add(this.panel4);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.BtnRigthList);
             this.panel2.Controls.Add(this.StarsText);
             this.panel2.Controls.Add(this.SubmitDateText);
             this.panel2.Controls.Add(this.BPMText);
@@ -162,6 +170,33 @@
             this.RandomButtom.UseVisualStyleBackColor = false;
             this.RandomButtom.Click += new System.EventHandler(this.RandomButton_Click);
             // 
+            // BtnRigthList
+            // 
+            resources.ApplyResources(this.BtnRigthList, "BtnRigthList");
+            this.BtnRigthList.Name = "BtnRigthList";
+            this.BtnRigthList.UseVisualStyleBackColor = true;
+            this.BtnRigthList.Click += new System.EventHandler(this.BtnRigthList_Click);
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(8)))), ((int)(((byte)(79)))));
+            this.panel4.Controls.Add(this.ListCountText);
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
+            // 
+            // ListCountText
+            // 
+            resources.ApplyResources(this.ListCountText, "ListCountText");
+            this.ListCountText.ForeColor = System.Drawing.SystemColors.Window;
+            this.ListCountText.Name = "ListCountText";
+            // 
             // WinForm
             // 
             resources.ApplyResources(this, "$this");
@@ -180,6 +215,8 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SongImg)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -204,5 +241,9 @@
         private System.Windows.Forms.Label CreatorText;
         private System.Windows.Forms.Label ArtistText;
         private System.Windows.Forms.Label StarsText;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button BtnRigthList;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label ListCountText;
     }
 }

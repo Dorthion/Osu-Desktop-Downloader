@@ -59,6 +59,7 @@ namespace OsuDesktop
         private void RandomButton_Click(object sender, EventArgs e)
         {
             SongImg.Image = null;
+            SelectedBeatmap = 0;
             RandomNumber = Rng();
             DownloadJson();   
             ChangeImg();
@@ -71,18 +72,20 @@ namespace OsuDesktop
             using (WebClient wc = new WebClient())
             {
                 FullJsonText = wc.DownloadString("https://osu.ppy.sh/api/get_beatmaps?k="+ApiCode +"&s="+RandomNumber.ToString());
-
-                if (FullJsonText != "[]")
+                while(FullJsonText == "[]")
                 {
-                    JsonText = JsonConvert.DeserializeObject<List<Beatmap>>(FullJsonText);
-                    //Console.WriteLine(JsonText.ElementAt(0).title);
-                    ChangeMainText();
+                    RandomNumber = Rng();
+                    FullJsonText = wc.DownloadString("https://osu.ppy.sh/api/get_beatmaps?k=" + ApiCode + "&s=" + RandomNumber.ToString());
                 }
+                    
+                JsonText = JsonConvert.DeserializeObject<List<Beatmap>>(FullJsonText);
+                ChangeMainText(); 
             }
         }
 
         private void ChangeMainText()
         {
+            #region Main_Panel
             TitleText.Text = rm.GetString("Title") + " " + JsonText.ElementAt(SelectedBeatmap).title;
             ArtistText.Text = rm.GetString("Artist") + " " + JsonText.ElementAt(SelectedBeatmap).artist;
             CreatorText.Text = rm.GetString("Creator") + " " + JsonText.ElementAt(SelectedBeatmap).creator;
@@ -94,6 +97,9 @@ namespace OsuDesktop
             BPMText.Text = rm.GetString("BPM") + " " + JsonText.ElementAt(SelectedBeatmap).bpm;
             StarsText.Text = rm.GetString("Stars") + " " + String.Format("{0:#.##}",JsonText.ElementAt(SelectedBeatmap).difficultyrating);
             SubmitDateText.Text = rm.GetString("SubmitDate") + " " + JsonText.ElementAt(SelectedBeatmap).submit_date;
+            #endregion
+
+            ListCountText.Text = string.Format("{0}", SelectedBeatmap + 1) + "/" + JsonText.Count;
         }
 
         private void ChangeImg()
@@ -128,6 +134,24 @@ namespace OsuDesktop
         {
             WinSettings Settings = new WinSettings();
             Settings.Show();
+        }
+
+        private void BtnRigthList_Click(object sender, EventArgs e)
+        {
+            if(JsonText != null && SelectedBeatmap + 1 < JsonText.Count)
+            {
+                SelectedBeatmap++;
+                ChangeMainText();
+            }
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            if (JsonText != null && SelectedBeatmap > 0)
+            {
+                SelectedBeatmap--;
+                ChangeMainText();
+            }
         }
     }
 }

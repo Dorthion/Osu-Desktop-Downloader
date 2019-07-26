@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(WinSettings));
             this.label1 = new System.Windows.Forms.Label();
             this.LanguageList = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -177,6 +178,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.LanguageList);
             this.Controls.Add(this.label1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "WinSettings";
             this.Text = "ODR Settings";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.WinSettings_FormClosed);
