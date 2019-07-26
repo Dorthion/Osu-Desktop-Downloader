@@ -21,7 +21,7 @@ namespace OsuDesktop
     public partial class WinForm : Form
     {
         protected int RandomNumber { get; set; }
-        protected string ApiCode;
+        protected string ApiCode;                                               //Put "your" api code here
         protected int SelectedBeatmap = 0;
 
         private List<Beatmap> JsonText { get; set; }
@@ -36,7 +36,7 @@ namespace OsuDesktop
 
         private void GetApiCode()
         {
-            using (StreamReader sr = new StreamReader("..\\..\\ApiCode.ddd"))
+            using (StreamReader sr = new StreamReader("..\\..\\ApiCode.ddd"))   //Or get from safety place (.gitignore)
             {
                 ApiCode = sr.ReadLine();
             }

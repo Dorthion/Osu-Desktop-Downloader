@@ -2,7 +2,6 @@ D:\Programowanie\OsuDesktop\bin\Debug\OsuDesktop.exe.config
 D:\Programowanie\OsuDesktop\bin\Debug\OsuDesktop.exe
 D:\Programowanie\OsuDesktop\bin\Debug\OsuDesktop.pdb
 D:\Programowanie\OsuDesktop\bin\Debug\Newtonsoft.Json.dll
-D:\Programowanie\OsuDesktop\bin\Debug\Newtonsoft.Json.xml
 D:\Programowanie\OsuDesktop\obj\Debug\OsuDesktop.csprojAssemblyReference.cache
 D:\Programowanie\OsuDesktop\obj\Debug\OsuDesktop.Properties.Resources.resources
 D:\Programowanie\OsuDesktop\obj\Debug\OsuDesktop.Resources.English.resources
@@ -13,3 +12,7 @@ D:\Programowanie\OsuDesktop\obj\Debug\OsuDesktop.csproj.CoreCompileInputs.cache
 D:\Programowanie\OsuDesktop\obj\Debug\OsuDesktop.csproj.CopyComplete
 D:\Programowanie\OsuDesktop\obj\Debug\OsuDesktop.exe
 D:\Programowanie\OsuDesktop\obj\Debug\OsuDesktop.pdb
+D:\Programowanie\OsuDesktop\bin\Debug\OsuDesktop.exe.manifest
+D:\Programowanie\OsuDesktop\bin\Debug\OsuDesktop.application
+D:\Programowanie\OsuDesktop\obj\Debug\OsuDesktop.exe.manifest
+D:\Programowanie\OsuDesktop\obj\Debug\OsuDesktop.application
