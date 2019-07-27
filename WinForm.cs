@@ -1,20 +1,15 @@
 ﻿using Newtonsoft.Json;
+using BeatmapMethods;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
-using System.IO;
 using System.Linq;
 using System.Net;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading;
-using System.Globalization;
 using System.Windows.Forms;
 using System.Resources;
 using System.Reflection;
+using System.IO;
 
 namespace OsuDesktop
 {
@@ -31,24 +26,8 @@ namespace OsuDesktop
         WMPLib.WindowsMediaPlayer PreviewSong;
         public WinForm()
         {
-            GetApiCode();
+            ApiCode = BM.GetApiCode();
             InitializeComponent();
-        }
-
-        private void GetApiCode()
-        {
-            using (StreamReader sr = new StreamReader("..\\..\\ApiCode.ddd"))   //Or get from safety place (.gitignore)
-            {
-                ApiCode = sr.ReadLine();
-            }
-        }
-
-        private int Rng()
-        {
-            int Number;
-            Random rng = new Random();
-            Number = rng.Next(1, 1000000);
-            return Number;
         }
 
         private void DownloadBtn_Click(object sender, EventArgs e)
@@ -60,27 +39,35 @@ namespace OsuDesktop
         {
             SongImg.Image = null;
             SelectedBeatmap = 0;
-            RandomNumber = Rng();
-            DownloadJson();
-            ChangeImg();
-        }
+            RandomNumber = BM.Rng();
 
-        private void DownloadJson()
-        {
-            string FullJsonText;
+            string temp = BM.DownloadJson(ApiCode, RandomNumber);
+            JsonText = JsonConvert.DeserializeObject<List<Beatmap>>(temp);
+
+            ChangeMainText();
+
+            string result = Path.GetTempPath() + "OsuDesktopTmp\\" + RandomNumber + ".jpg";
+            string BeatmapImg = "https://assets.ppy.sh/beatmaps/" + RandomNumber + "/covers/cover.jpg";
             using (WebClient wc = new WebClient())
             {
-                FullJsonText = wc.DownloadString("https://osu.ppy.sh/api/get_beatmaps?k=" + ApiCode + "&s=" + RandomNumber.ToString());
-                while (FullJsonText == "[]")
+                try
                 {
-                    RandomNumber = Rng();
-                    FullJsonText = wc.DownloadString("https://osu.ppy.sh/api/get_beatmaps?k=" + ApiCode + "&s=" + RandomNumber.ToString());
+                    wc.DownloadFile(new Uri(BeatmapImg), result);
                 }
-
-                JsonText = JsonConvert.DeserializeObject<List<Beatmap>>(FullJsonText);
-                ChangeMainText();
+                catch (WebException)
+                {
+                    SongImg.Image = SongImg.ErrorImage;
+                }
+                finally
+                {
+                    if (SongImg.Image != SongImg.ErrorImage)
+                        SongImg.Image = Bitmap.FromFile(result);
+                }
             }
+
+            BM.CreateTempFolder();
         }
+   
 
         private void ChangeMainText()
         {
@@ -100,36 +87,6 @@ namespace OsuDesktop
 
             ListCountText.Text = string.Format("{0}", SelectedBeatmap + 1) + "/" + JsonText.Count;
             RngNumText.Text = RandomNumber.ToString();
-        }
-
-        private void ChangeImg()
-        {
-            string TempPath = Path.GetTempPath() + "OsuDesktopTmp\\";
-
-            bool exists = Directory.Exists(TempPath);
-
-            if (!exists)
-                Directory.CreateDirectory(TempPath);
-
-            string result = Path.GetTempPath() + "OsuDesktopTmp\\" + RandomNumber + ".jpg";
-            string BeatmapImg = "https://assets.ppy.sh/beatmaps/" + RandomNumber + "/covers/cover.jpg";
-
-            using (WebClient wc = new WebClient())
-            {
-                try
-                {
-                    wc.DownloadFile(new Uri(BeatmapImg), result);
-                }
-                catch (WebException)
-                {
-                    SongImg.Image = SongImg.ErrorImage;
-                }
-                finally
-                {
-                    if (SongImg.Image != SongImg.ErrorImage)
-                        SongImg.Image = Bitmap.FromFile(result);
-                }
-            }
         }
 
         private void BtnRigthList_Click(object sender, EventArgs e)
@@ -165,6 +122,12 @@ namespace OsuDesktop
             PreviewSong.controls.play();
         }
 
+        private void BeatmapText_Click(object sender, EventArgs e)
+        {
+            WinSettings Settings = new WinSettings();
+            Settings.Show();
+        }
+
         private void Player_PlayStateChange(int NewState)
         {
             if ((WMPLib.WMPPlayState)NewState == WMPLib.WMPPlayState.wmppsStopped)
@@ -177,12 +140,6 @@ namespace OsuDesktop
         private void Player_MediaError(object pMediaObject)
         {
             MessageBox.Show("Cant play preview song. \nOOF.");
-        }
-
-        private void BeatmapText_Click(object sender, EventArgs e)
-        {
-            WinSettings Settings = new WinSettings();
-            Settings.Show();
         }
     }
 }

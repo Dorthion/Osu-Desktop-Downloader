@@ -93,11 +93,23 @@
     <Compile Include="Scripts\Beatmap.cs" />
     <Compile Include="Scripts\BeatmapCalculator.cs" />
     <Compile Include="Scripts\Program.cs" />
+    <Compile Include="WinFormModern.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinFormModern.Designer.cs">
+      <DependentUpon>WinFormModern.cs</DependentUpon>
+    </Compile>
     <Compile Include="WinForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="WinForm.Designer.cs">
       <DependentUpon>WinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WinLite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WinLite.Designer.cs">
+      <DependentUpon>WinLite.cs</DependentUpon>
     </Compile>
     <Compile Include="WinSettings.cs">
       <SubType>Form</SubType>
@@ -107,6 +119,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="BeatmapMethods">
+      <HintPath>..\BeatmapMethods\bin\Debug\BeatmapMethods.dll</HintPath>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>EmbeddedAssemblies\Newtonsoft.Json.dll</HintPath>
@@ -126,6 +141,9 @@
     <EmbeddedResource Include="Resources\Polski.resx" />
     <EmbeddedResource Include="WinForm.resx">
       <DependentUpon>WinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinLite.resx">
+      <DependentUpon>WinLite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinSettings.resx">
       <DependentUpon>WinSettings.cs</DependentUpon>

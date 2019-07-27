@@ -16,3 +16,9 @@ D:\Programowanie\OsuDesktop\bin\Debug\OsuDesktop.exe.manifest
 D:\Programowanie\OsuDesktop\bin\Debug\OsuDesktop.application
 D:\Programowanie\OsuDesktop\obj\Debug\OsuDesktop.exe.manifest
 D:\Programowanie\OsuDesktop\obj\Debug\OsuDesktop.application
+D:\Programowanie\OsuDesktop\obj\Debug\Interop.WMPLib.dll
+D:\Programowanie\OsuDesktop\obj\Debug\OsuDesktop.csproj.ResolveComReference.cache
+D:\Programowanie\OsuDesktop\obj\Debug\OsuDesktop.WinLite.resources
+D:\Programowanie\OsuDesktop\obj\Debug\OsuDesktop.WinSettings.resources
+D:\Programowanie\OsuDesktop\bin\Debug\BeatmapMethods.dll
+D:\Programowanie\OsuDesktop\bin\Debug\BeatmapMethods.pdb
