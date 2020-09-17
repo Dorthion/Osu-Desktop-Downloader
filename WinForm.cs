@@ -37,37 +37,41 @@ namespace OsuDesktop
 
         private void RandomButtom_Click(object sender, EventArgs e)
         {
+            #region Clean_Win
             SongImg.Image = null;
             SelectedBeatmap = 0;
             RandomNumber = BM.Rng();
+            #endregion
 
+            #region Download_Information
             string temp = BM.DownloadJson(ApiCode, RandomNumber);
             JsonText = JsonConvert.DeserializeObject<List<Beatmap>>(temp);
 
             ChangeMainText();
+            Refresh();
+            #endregion
 
+            #region Download_Image
+            BM.CreateTempFolder();
             string result = Path.GetTempPath() + "OsuDesktopTmp\\" + RandomNumber + ".jpg";
             string BeatmapImg = "https://assets.ppy.sh/beatmaps/" + RandomNumber + "/covers/cover.jpg";
-            using (WebClient wc = new WebClient())
+            using WebClient wc = new WebClient();
+            try
             {
-                try
-                {
-                    wc.DownloadFile(new Uri(BeatmapImg), result);
-                }
-                catch (WebException)
-                {
-                    SongImg.Image = SongImg.ErrorImage;
-                }
-                finally
-                {
-                    if (SongImg.Image != SongImg.ErrorImage)
-                        SongImg.Image = Bitmap.FromFile(result);
-                }
+                wc.DownloadFile(new Uri(BeatmapImg), result);
             }
-
-            BM.CreateTempFolder();
+            catch (WebException)
+            {
+                SongImg.Image = SongImg.ErrorImage;
+            }
+            finally
+            {
+                if (SongImg.Image != SongImg.ErrorImage)
+                    SongImg.Image = Bitmap.FromFile(result);
+            }
+            #endregion
         }
-   
+
 
         private void ChangeMainText()
         {
@@ -140,6 +144,12 @@ namespace OsuDesktop
         private void Player_MediaError(object pMediaObject)
         {
             MessageBox.Show("Cant play preview song. \nOOF.");
+        }
+
+        private void RngNumText_Click(object sender, EventArgs e)
+        {
+            WinLite Lite = null;
+            Lite.Show();
         }
     }
 }

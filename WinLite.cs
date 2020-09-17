@@ -16,5 +16,10 @@ namespace OsuDesktop
         {
             InitializeComponent();
         }
+
+        private void PictureBox1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

@@ -39,6 +39,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -48,6 +49,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestCertificateThumbprint>BACB1ECB681F236577911201E9456BA526A806E1</ManifestCertificateThumbprint>
@@ -59,7 +61,7 @@
     <GenerateManifests>true</GenerateManifests>
   </PropertyGroup>
   <PropertyGroup>
-    <SignManifests>true</SignManifests>
+    <SignManifests>false</SignManifests>
   </PropertyGroup>
   <PropertyGroup>
     <StartupObject>OsuDesktop.Program</StartupObject>
@@ -119,9 +121,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="BeatmapMethods">
-      <HintPath>..\BeatmapMethods\bin\Debug\BeatmapMethods.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>EmbeddedAssemblies\Newtonsoft.Json.dll</HintPath>
@@ -141,6 +140,9 @@
     <EmbeddedResource Include="Resources\Polski.resx" />
     <EmbeddedResource Include="WinForm.resx">
       <DependentUpon>WinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WinFormModern.resx">
+      <DependentUpon>WinFormModern.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WinLite.resx">
       <DependentUpon>WinLite.cs</DependentUpon>
@@ -181,6 +183,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="IconMeme.ico" />
+    <None Include="Resources\HideShowImg.png" />
+    <None Include="Resources\Ximg.png" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="WMPLib">
@@ -192,6 +196,12 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BeatmapMethods\BeatmapMethods.csproj">
+      <Project>{6d6482c9-c366-46fa-b821-3e1557ee0ce1}</Project>
+      <Name>BeatmapMethods</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -63,6 +63,16 @@ namespace OsuDesktop.Properties {
         /// <summary>
         ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap HideShowImg {
+            get {
+                object obj = ResourceManager.GetObject("HideShowImg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ikona1 {
             get {
                 object obj = ResourceManager.GetObject("ikona1", resourceCulture);
@@ -106,6 +116,16 @@ namespace OsuDesktop.Properties {
         internal static System.Drawing.Bitmap triangles_combined {
             get {
                 object obj = ResourceManager.GetObject("triangles-combined", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Ximg {
+            get {
+                object obj = ResourceManager.GetObject("Ximg", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

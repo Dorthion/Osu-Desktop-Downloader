@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29025.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OsuDesktop", "OsuDesktop.csproj", "{694D486C-EE5E-42FB-8F2F-691FEC0276CF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6D6482C9-C366-46FA-B821-3E1557EE0CE1} = {6D6482C9-C366-46FA-B821-3E1557EE0CE1}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeatmapMethods", "..\BeatmapMethods\BeatmapMethods.csproj", "{6D6482C9-C366-46FA-B821-3E1557EE0CE1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{694D486C-EE5E-42FB-8F2F-691FEC0276CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{694D486C-EE5E-42FB-8F2F-691FEC0276CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{694D486C-EE5E-42FB-8F2F-691FEC0276CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{694D486C-EE5E-42FB-8F2F-691FEC0276CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D6482C9-C366-46FA-B821-3E1557EE0CE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D6482C9-C366-46FA-B821-3E1557EE0CE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D6482C9-C366-46FA-B821-3E1557EE0CE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D6482C9-C366-46FA-B821-3E1557EE0CE1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {38456A1D-32E6-4AEB-B6DF-B6D61716F9AB}
+	EndGlobalSection
+EndGlobal

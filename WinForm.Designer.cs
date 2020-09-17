@@ -61,9 +61,10 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(84)))));
             this.panel3.BackgroundImage = global::OsuDesktop.Properties.Resources.ikona2;
             this.panel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.panel3.Location = new System.Drawing.Point(736, 328);
+            this.panel3.Location = new System.Drawing.Point(552, 266);
+            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(100, 100);
+            this.panel3.Size = new System.Drawing.Size(75, 81);
             this.panel3.TabIndex = 14;
             // 
             // BeatmapText
@@ -71,9 +72,10 @@
             this.BeatmapText.AutoSize = true;
             this.BeatmapText.ForeColor = System.Drawing.SystemColors.Window;
             this.BeatmapText.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BeatmapText.Location = new System.Drawing.Point(760, 445);
+            this.BeatmapText.Location = new System.Drawing.Point(570, 362);
+            this.BeatmapText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.BeatmapText.Name = "BeatmapText";
-            this.BeatmapText.Size = new System.Drawing.Size(54, 34);
+            this.BeatmapText.Size = new System.Drawing.Size(41, 26);
             this.BeatmapText.TabIndex = 12;
             this.BeatmapText.Text = "    BR\r\nVer 0.1";
             this.BeatmapText.Click += new System.EventHandler(this.BeatmapText_Click);
@@ -93,18 +95,20 @@
             this.panel2.Controls.Add(this.CreatorText);
             this.panel2.Controls.Add(this.ArtistText);
             this.panel2.Controls.Add(this.TitleText);
-            this.panel2.Location = new System.Drawing.Point(10, 222);
+            this.panel2.Location = new System.Drawing.Point(8, 180);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(720, 268);
+            this.panel2.Size = new System.Drawing.Size(540, 218);
             this.panel2.TabIndex = 13;
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(8)))), ((int)(((byte)(79)))));
             this.panel4.Controls.Add(this.ListCountText);
-            this.panel4.Location = new System.Drawing.Point(632, 236);
+            this.panel4.Location = new System.Drawing.Point(474, 192);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(50, 25);
+            this.panel4.Size = new System.Drawing.Size(38, 20);
             this.panel4.TabIndex = 17;
             // 
             // ListCountText
@@ -113,10 +117,11 @@
             this.ListCountText.ForeColor = System.Drawing.SystemColors.Window;
             this.ListCountText.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.ListCountText.Location = new System.Drawing.Point(0, 0);
-            this.ListCountText.MaximumSize = new System.Drawing.Size(50, 25);
-            this.ListCountText.MinimumSize = new System.Drawing.Size(50, 25);
+            this.ListCountText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ListCountText.MaximumSize = new System.Drawing.Size(38, 20);
+            this.ListCountText.MinimumSize = new System.Drawing.Size(38, 20);
             this.ListCountText.Name = "ListCountText";
-            this.ListCountText.Size = new System.Drawing.Size(50, 25);
+            this.ListCountText.Size = new System.Drawing.Size(38, 20);
             this.ListCountText.TabIndex = 12;
             this.ListCountText.Text = "0/0";
             this.ListCountText.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -124,9 +129,10 @@
             // BtnLeftList
             // 
             this.BtnLeftList.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnLeftList.Location = new System.Drawing.Point(601, 236);
+            this.BtnLeftList.Location = new System.Drawing.Point(451, 192);
+            this.BtnLeftList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnLeftList.Name = "BtnLeftList";
-            this.BtnLeftList.Size = new System.Drawing.Size(25, 25);
+            this.BtnLeftList.Size = new System.Drawing.Size(19, 20);
             this.BtnLeftList.TabIndex = 16;
             this.BtnLeftList.Text = "<";
             this.BtnLeftList.UseVisualStyleBackColor = true;
@@ -137,11 +143,12 @@
             this.StarsText.AutoSize = true;
             this.StarsText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.StarsText.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.StarsText.Location = new System.Drawing.Point(358, 201);
-            this.StarsText.MaximumSize = new System.Drawing.Size(355, 32);
-            this.StarsText.MinimumSize = new System.Drawing.Size(355, 32);
+            this.StarsText.Location = new System.Drawing.Point(268, 163);
+            this.StarsText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.StarsText.MaximumSize = new System.Drawing.Size(266, 26);
+            this.StarsText.MinimumSize = new System.Drawing.Size(266, 26);
             this.StarsText.Name = "StarsText";
-            this.StarsText.Size = new System.Drawing.Size(355, 32);
+            this.StarsText.Size = new System.Drawing.Size(266, 26);
             this.StarsText.TabIndex = 8;
             this.StarsText.Text = "Stars:";
             this.StarsText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -149,9 +156,10 @@
             // BtnRigthList
             // 
             this.BtnRigthList.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BtnRigthList.Location = new System.Drawing.Point(688, 236);
+            this.BtnRigthList.Location = new System.Drawing.Point(516, 192);
+            this.BtnRigthList.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnRigthList.Name = "BtnRigthList";
-            this.BtnRigthList.Size = new System.Drawing.Size(25, 25);
+            this.BtnRigthList.Size = new System.Drawing.Size(19, 20);
             this.BtnRigthList.TabIndex = 15;
             this.BtnRigthList.Text = ">";
             this.BtnRigthList.UseVisualStyleBackColor = true;
@@ -162,11 +170,12 @@
             this.SubmitDateText.AutoSize = true;
             this.SubmitDateText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.SubmitDateText.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.SubmitDateText.Location = new System.Drawing.Point(3, 233);
-            this.SubmitDateText.MaximumSize = new System.Drawing.Size(710, 32);
-            this.SubmitDateText.MinimumSize = new System.Drawing.Size(710, 32);
+            this.SubmitDateText.Location = new System.Drawing.Point(2, 189);
+            this.SubmitDateText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.SubmitDateText.MaximumSize = new System.Drawing.Size(532, 26);
+            this.SubmitDateText.MinimumSize = new System.Drawing.Size(532, 26);
             this.SubmitDateText.Name = "SubmitDateText";
-            this.SubmitDateText.Size = new System.Drawing.Size(710, 32);
+            this.SubmitDateText.Size = new System.Drawing.Size(532, 26);
             this.SubmitDateText.TabIndex = 7;
             this.SubmitDateText.Text = "Submit Date:";
             this.SubmitDateText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -176,11 +185,12 @@
             this.BPMText.AutoSize = true;
             this.BPMText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.BPMText.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.BPMText.Location = new System.Drawing.Point(3, 201);
-            this.BPMText.MaximumSize = new System.Drawing.Size(355, 32);
-            this.BPMText.MinimumSize = new System.Drawing.Size(355, 32);
+            this.BPMText.Location = new System.Drawing.Point(2, 163);
+            this.BPMText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.BPMText.MaximumSize = new System.Drawing.Size(266, 26);
+            this.BPMText.MinimumSize = new System.Drawing.Size(266, 26);
             this.BPMText.Name = "BPMText";
-            this.BPMText.Size = new System.Drawing.Size(355, 32);
+            this.BPMText.Size = new System.Drawing.Size(266, 26);
             this.BPMText.TabIndex = 6;
             this.BPMText.Text = "BPM:";
             this.BPMText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -190,11 +200,12 @@
             this.DrainLengthText.AutoSize = true;
             this.DrainLengthText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.DrainLengthText.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.DrainLengthText.Location = new System.Drawing.Point(3, 169);
-            this.DrainLengthText.MaximumSize = new System.Drawing.Size(710, 32);
-            this.DrainLengthText.MinimumSize = new System.Drawing.Size(710, 32);
+            this.DrainLengthText.Location = new System.Drawing.Point(2, 137);
+            this.DrainLengthText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.DrainLengthText.MaximumSize = new System.Drawing.Size(532, 26);
+            this.DrainLengthText.MinimumSize = new System.Drawing.Size(532, 26);
             this.DrainLengthText.Name = "DrainLengthText";
-            this.DrainLengthText.Size = new System.Drawing.Size(710, 32);
+            this.DrainLengthText.Size = new System.Drawing.Size(532, 26);
             this.DrainLengthText.TabIndex = 5;
             this.DrainLengthText.Text = "Drain/Length:";
             this.DrainLengthText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -204,11 +215,12 @@
             this.PassTriedText.AutoSize = true;
             this.PassTriedText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.PassTriedText.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.PassTriedText.Location = new System.Drawing.Point(3, 137);
-            this.PassTriedText.MaximumSize = new System.Drawing.Size(710, 32);
-            this.PassTriedText.MinimumSize = new System.Drawing.Size(710, 32);
+            this.PassTriedText.Location = new System.Drawing.Point(2, 111);
+            this.PassTriedText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.PassTriedText.MaximumSize = new System.Drawing.Size(532, 26);
+            this.PassTriedText.MinimumSize = new System.Drawing.Size(532, 26);
             this.PassTriedText.Name = "PassTriedText";
-            this.PassTriedText.Size = new System.Drawing.Size(710, 32);
+            this.PassTriedText.Size = new System.Drawing.Size(532, 26);
             this.PassTriedText.TabIndex = 4;
             this.PassTriedText.Text = "Pass/Tried:";
             this.PassTriedText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -218,11 +230,12 @@
             this.DiffNameText.AutoSize = true;
             this.DiffNameText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.DiffNameText.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.DiffNameText.Location = new System.Drawing.Point(3, 105);
-            this.DiffNameText.MaximumSize = new System.Drawing.Size(710, 32);
-            this.DiffNameText.MinimumSize = new System.Drawing.Size(710, 32);
+            this.DiffNameText.Location = new System.Drawing.Point(2, 85);
+            this.DiffNameText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.DiffNameText.MaximumSize = new System.Drawing.Size(532, 26);
+            this.DiffNameText.MinimumSize = new System.Drawing.Size(532, 26);
             this.DiffNameText.Name = "DiffNameText";
-            this.DiffNameText.Size = new System.Drawing.Size(710, 32);
+            this.DiffNameText.Size = new System.Drawing.Size(532, 26);
             this.DiffNameText.TabIndex = 3;
             this.DiffNameText.Text = "Difficulty Name:";
             this.DiffNameText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -232,11 +245,12 @@
             this.CreatorText.AutoSize = true;
             this.CreatorText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.CreatorText.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.CreatorText.Location = new System.Drawing.Point(3, 73);
-            this.CreatorText.MaximumSize = new System.Drawing.Size(710, 32);
-            this.CreatorText.MinimumSize = new System.Drawing.Size(710, 32);
+            this.CreatorText.Location = new System.Drawing.Point(2, 59);
+            this.CreatorText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.CreatorText.MaximumSize = new System.Drawing.Size(532, 26);
+            this.CreatorText.MinimumSize = new System.Drawing.Size(532, 26);
             this.CreatorText.Name = "CreatorText";
-            this.CreatorText.Size = new System.Drawing.Size(710, 32);
+            this.CreatorText.Size = new System.Drawing.Size(532, 26);
             this.CreatorText.TabIndex = 2;
             this.CreatorText.Text = "Creator:";
             this.CreatorText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -246,11 +260,12 @@
             this.ArtistText.AutoSize = true;
             this.ArtistText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.ArtistText.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.ArtistText.Location = new System.Drawing.Point(3, 41);
-            this.ArtistText.MaximumSize = new System.Drawing.Size(710, 32);
-            this.ArtistText.MinimumSize = new System.Drawing.Size(710, 32);
+            this.ArtistText.Location = new System.Drawing.Point(2, 33);
+            this.ArtistText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ArtistText.MaximumSize = new System.Drawing.Size(532, 26);
+            this.ArtistText.MinimumSize = new System.Drawing.Size(532, 26);
             this.ArtistText.Name = "ArtistText";
-            this.ArtistText.Size = new System.Drawing.Size(710, 32);
+            this.ArtistText.Size = new System.Drawing.Size(532, 26);
             this.ArtistText.TabIndex = 1;
             this.ArtistText.Text = "Artist:";
             this.ArtistText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -260,11 +275,12 @@
             this.TitleText.AutoSize = true;
             this.TitleText.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold);
             this.TitleText.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.TitleText.Location = new System.Drawing.Point(3, 9);
-            this.TitleText.MaximumSize = new System.Drawing.Size(710, 32);
-            this.TitleText.MinimumSize = new System.Drawing.Size(710, 32);
+            this.TitleText.Location = new System.Drawing.Point(2, 7);
+            this.TitleText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.TitleText.MaximumSize = new System.Drawing.Size(532, 26);
+            this.TitleText.MinimumSize = new System.Drawing.Size(532, 26);
             this.TitleText.Name = "TitleText";
-            this.TitleText.Size = new System.Drawing.Size(710, 32);
+            this.TitleText.Size = new System.Drawing.Size(532, 26);
             this.TitleText.TabIndex = 0;
             this.TitleText.Text = "Title:";
             this.TitleText.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -273,9 +289,10 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(122)))), ((int)(((byte)(84)))));
             this.panel1.Controls.Add(this.RngNumText);
-            this.panel1.Location = new System.Drawing.Point(736, 222);
+            this.panel1.Location = new System.Drawing.Point(552, 180);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(100, 100);
+            this.panel1.Size = new System.Drawing.Size(75, 81);
             this.panel1.TabIndex = 11;
             // 
             // RngNumText
@@ -283,12 +300,14 @@
             this.RngNumText.AutoSize = true;
             this.RngNumText.Font = new System.Drawing.Font("Verdana", 14F);
             this.RngNumText.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.RngNumText.Location = new System.Drawing.Point(0, 26);
-            this.RngNumText.MinimumSize = new System.Drawing.Size(100, 40);
+            this.RngNumText.Location = new System.Drawing.Point(0, 21);
+            this.RngNumText.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.RngNumText.MinimumSize = new System.Drawing.Size(75, 32);
             this.RngNumText.Name = "RngNumText";
-            this.RngNumText.Size = new System.Drawing.Size(100, 40);
+            this.RngNumText.Size = new System.Drawing.Size(75, 32);
             this.RngNumText.TabIndex = 0;
             this.RngNumText.Text = "Rng";
+            this.RngNumText.Click += new System.EventHandler(this.RngNumText_Click);
             // 
             // SongImg
             // 
@@ -296,9 +315,10 @@
             this.SongImg.BackgroundImage = global::OsuDesktop.Properties.Resources.triangles_combined;
             this.SongImg.ErrorImage = global::OsuDesktop.Properties.Resources.NoImage;
             this.SongImg.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.SongImg.Location = new System.Drawing.Point(10, 12);
+            this.SongImg.Location = new System.Drawing.Point(8, 10);
+            this.SongImg.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.SongImg.Name = "SongImg";
-            this.SongImg.Size = new System.Drawing.Size(720, 200);
+            this.SongImg.Size = new System.Drawing.Size(540, 162);
             this.SongImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.SongImg.TabIndex = 10;
             this.SongImg.TabStop = false;
@@ -310,9 +330,10 @@
             this.DownloadBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("DownloadBtn.BackgroundImage")));
             this.DownloadBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.DownloadBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.DownloadBtn.Location = new System.Drawing.Point(736, 117);
+            this.DownloadBtn.Location = new System.Drawing.Point(552, 95);
+            this.DownloadBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DownloadBtn.Name = "DownloadBtn";
-            this.DownloadBtn.Size = new System.Drawing.Size(100, 100);
+            this.DownloadBtn.Size = new System.Drawing.Size(75, 81);
             this.DownloadBtn.TabIndex = 9;
             this.DownloadBtn.UseVisualStyleBackColor = false;
             this.DownloadBtn.Click += new System.EventHandler(this.DownloadBtn_Click);
@@ -323,19 +344,20 @@
             this.RandomButtom.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("RandomButtom.BackgroundImage")));
             this.RandomButtom.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.RandomButtom.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.RandomButtom.Location = new System.Drawing.Point(736, 12);
+            this.RandomButtom.Location = new System.Drawing.Point(552, 10);
+            this.RandomButtom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RandomButtom.Name = "RandomButtom";
-            this.RandomButtom.Size = new System.Drawing.Size(100, 100);
+            this.RandomButtom.Size = new System.Drawing.Size(75, 81);
             this.RandomButtom.TabIndex = 8;
             this.RandomButtom.UseVisualStyleBackColor = false;
             this.RandomButtom.Click += new System.EventHandler(this.RandomButtom_Click);
             // 
             // WinForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(1)))), ((int)(((byte)(8)))), ((int)(((byte)(79)))));
-            this.ClientSize = new System.Drawing.Size(846, 502);
+            this.ClientSize = new System.Drawing.Size(634, 408);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.BeatmapText);
             this.Controls.Add(this.panel2);
@@ -344,6 +366,7 @@
             this.Controls.Add(this.DownloadBtn);
             this.Controls.Add(this.RandomButtom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "WinForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
