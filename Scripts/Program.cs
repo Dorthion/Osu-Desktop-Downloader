@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Reflection;
+using OsuDesktop.Views;
 
 namespace OsuDesktop
 {
@@ -12,7 +13,7 @@ namespace OsuDesktop
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             AppDomain.CurrentDomain.AssemblyResolve += CurrentDomain_AssemblyResolve;
-            Application.Run(new WinForm());
+            Application.Run(new WinFormModern());
             
         }
 

@@ -70,12 +70,12 @@
     <NoWin32Manifest>true</NoWin32Manifest>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>IconMeme.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <None Include="ApiCode.ddd" />
     <None Include="App.config" />
-    <None Include="OsuDesktop_TemporaryKey.pfx" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -92,31 +92,34 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
-    <Compile Include="Scripts\Beatmap.cs" />
     <Compile Include="Scripts\BeatmapCalculator.cs" />
+    <Compile Include="Scripts\Models\Beatmap.cs" />
     <Compile Include="Scripts\Program.cs" />
-    <Compile Include="WinFormModern.cs">
+    <Compile Include="Scripts\Separator.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\WinFormModern.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WinFormModern.Designer.cs">
+    <Compile Include="Views\WinFormModern.Designer.cs">
       <DependentUpon>WinFormModern.cs</DependentUpon>
     </Compile>
-    <Compile Include="WinForm.cs">
+    <Compile Include="Views\WinForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WinForm.Designer.cs">
+    <Compile Include="Views\WinForm.Designer.cs">
       <DependentUpon>WinForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="WinLite.cs">
+    <Compile Include="Views\WinLite.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WinLite.Designer.cs">
+    <Compile Include="Views\WinLite.Designer.cs">
       <DependentUpon>WinLite.cs</DependentUpon>
     </Compile>
-    <Compile Include="WinSettings.cs">
+    <Compile Include="Views\WinSettings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WinSettings.Designer.cs">
+    <Compile Include="Views\WinSettings.Designer.cs">
       <DependentUpon>WinSettings.cs</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -138,16 +141,16 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\English.resx" />
     <EmbeddedResource Include="Resources\Polski.resx" />
-    <EmbeddedResource Include="WinForm.resx">
+    <EmbeddedResource Include="Views\WinForm.resx">
       <DependentUpon>WinForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WinFormModern.resx">
+    <EmbeddedResource Include="Views\WinFormModern.resx">
       <DependentUpon>WinFormModern.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WinLite.resx">
+    <EmbeddedResource Include="Views\WinLite.resx">
       <DependentUpon>WinLite.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="WinSettings.resx">
+    <EmbeddedResource Include="Views\WinSettings.resx">
       <DependentUpon>WinSettings.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
@@ -182,7 +185,6 @@
     <EmbeddedResource Include="EmbeddedAssemblies\Newtonsoft.Json.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="IconMeme.ico" />
     <None Include="Resources\HideShowImg.png" />
     <None Include="Resources\Ximg.png" />
   </ItemGroup>

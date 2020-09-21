@@ -32,7 +32,11 @@ namespace OsuDesktop
 
         private void DownloadBtn_Click(object sender, EventArgs e)
         {
-            Process.Start("osu://dl/" + RandomNumber);
+            //Download split for Non-Supporters and Supporters
+            //if() //<- new 
+            //Process.Start("osu://dl/" + RandomNumber);
+            //else
+            Process.Start("https://osu.ppy.sh/s/" + RandomNumber);
         }
 
         private void RandomButtom_Click(object sender, EventArgs e)
