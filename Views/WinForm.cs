@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
-using System.Net;
 using System.Windows.Forms;
 using System.Resources;
 using System.Reflection;
@@ -56,23 +55,9 @@ namespace OsuDesktop
             #endregion
 
             #region Download_Image
-            BM.CreateTempFolder();
-            string result = Path.GetTempPath() + "OsuDesktopTmp\\" + RandomNumber + ".jpg";
-            string BeatmapImg = "https://assets.ppy.sh/beatmaps/" + RandomNumber + "/covers/cover.jpg";
-            using WebClient wc = new WebClient();
-            try
-            {
-                wc.DownloadFile(new Uri(BeatmapImg), result);
-            }
-            catch (WebException)
-            {
-                SongImg.Image = SongImg.ErrorImage;
-            }
-            finally
-            {
-                if (SongImg.Image != SongImg.ErrorImage)
-                    SongImg.Image = Bitmap.FromFile(result);
-            }
+            if (BM.DownloadImage(RandomNumber))
+                SongImg.Image = Bitmap.FromFile(Path.GetTempPath() + "OsuDesktopTmp\\" + RandomNumber + ".jpg");
+            else SongImg.Image = SongImg.ErrorImage;
             #endregion
         }
 

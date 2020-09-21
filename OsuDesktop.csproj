@@ -95,8 +95,20 @@
     <Compile Include="Scripts\BeatmapCalculator.cs" />
     <Compile Include="Scripts\Models\Beatmap.cs" />
     <Compile Include="Scripts\Program.cs" />
+    <Compile Include="Scripts\RoundButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Scripts\RoundRectangle.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Scripts\Separator.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Views\ModernSubViews\FormMainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\ModernSubViews\FormMainWindow.Designer.cs">
+      <DependentUpon>FormMainWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\WinFormModern.cs">
       <SubType>Form</SubType>
@@ -141,6 +153,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\English.resx" />
     <EmbeddedResource Include="Resources\Polski.resx" />
+    <EmbeddedResource Include="Views\ModernSubViews\FormMainWindow.resx">
+      <DependentUpon>FormMainWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\WinForm.resx">
       <DependentUpon>WinForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -205,5 +220,6 @@
       <Name>BeatmapMethods</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
