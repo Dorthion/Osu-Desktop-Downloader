@@ -14,9 +14,9 @@ namespace OsuDesktop
 {
     public partial class WinForm : Form
     {
-        protected int RandomNumber { get; set; }
-        protected string ApiCode;                                               //Put "your" api code here
-        protected int SelectedBeatmap = 0;
+        private int RandomNumber { get; set; }
+        private string ApiCode;                                               //Put "your" api code here
+        private int SelectedBeatmap = 0;
 
         private List<Beatmap> JsonText { get; set; }
 
